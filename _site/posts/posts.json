@@ -15,5 +15,22 @@
     "preview": {},
     "last_modified": "2021-05-22T12:18:01+08:00",
     "input_file": {}
+  },
+  {
+    "path": "posts/2021-05-22-dataviz-makeover-1/",
+    "title": "DataViz Makeover 1 - Merchandise trade",
+    "description": "DataViz Makeover 1 for ISSS608: Visual Analytics",
+    "author": [
+      {
+        "name": "Jovinka Hartanto",
+        "url": "https://www.linkedin.com/in/jovinkahartanto/"
+      }
+    ],
+    "date": "2021-05-22",
+    "categories": [],
+    "contents": "\r\n1. Introduction\r\n2. Critique of Visualisation\r\nTo explore different perspective and design more truthful and enlightening data visualisation, we will first observe the original visualisation of the data (Figure 1). The critiques will be divided into two section, clarity and aesthetics.\r\nFigure 12.1 Clarity\r\nThe title of the graph does not match the visualisation. The title leads us to expect that the graph will be showing merchandise trade data for period 2019 to 2020, meanwhile the x-axis label for Japan only shows year of 2020 and the period for the rest of the graph starts from 2019 and ends in 2021.\r\nThe period of the data used is inconsistent. According to the graph, it seems like it covers merchandise trade data from 2019 to 2021 for Hong Kong, Mainland China, Taiwan, US, and Malaysia. However, we can observe that for Japan, it only covers merchandise trade data in 2020.\r\nThe title of X axis is confusing. The axis title clearly mentions “Month of Period”, but the x-axis label display years instead of months.\r\n2.2 Aesthetics\r\nThe graph will be easier to understand if line graph were used.\r\nAdding tick marks for both axis will be necessary since this graph is a continuous scale. The non existence of the graph make it harder to read the graph.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-05-23T22:18:00+08:00",
+    "input_file": "dataviz-makeover-1.knit.md"
   }
 ]
