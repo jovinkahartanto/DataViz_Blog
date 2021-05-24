@@ -32,3 +32,16 @@ To explore different perspective and design more truthful and enlightening data 
 1. The graph will be easier to understand if line graph were used.
 2. Adding tick marks for both axis will be necessary since this graph is a continuous scale. The non existence of the graph make it harder to read the graph.
 
+
+# 3. Alternative Design
+The alternative graphical design proposed can be seen below:
+
+The proposed design above will improve the original visualisation in terms of:
+
+# 4. Step-by-Step Guide
+
+1.	Clean the raw data by selecting all countries’ merchandise trade data for the year 2019 to 2020. Copy the table from the raw dataset and paste it into the first row of the new created worksheet by using excel workbook. Clean import and export data are stored in two different worksheets.
+![**Figure 2**](img/imp_cl_1.png) 
+![**Figure 3**](img/exp_cl_1.png)
+
+
