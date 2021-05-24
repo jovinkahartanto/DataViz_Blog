@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/exp_cl_1.png","img/imp_cl_1.png","img/original.PNG"]}
+  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/clean_filter.PNG","img/clean_filter_2.PNG","img/clean_filter_3.PNG","img/clean_filter_4.PNG","img/country.png","img/exp_cl_1.png","img/imp_cl_1.png","img/imp_cl_2.png","img/imp_cl_3.png","img/imp_exp_clean_import.png","img/imp_exp_cln.PNG","img/imp_tableau_1.png","img/import_data_tableau.png","img/import_data_tableau_1.PNG","img/import_data_tableau_2.PNG","img/import_data_tableau_3.png","img/import_data_tableau_4.png","img/original.PNG","img/split_date.png","img/split_date_2.png","img/view_data_1.png","img/view_data_2.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1499,8 +1499,65 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>The proposed design above will improve the original visualisation in terms of:</p>
 <h1 id="step-by-step-guide">4. Step-by-Step Guide</h1>
 <ol type="1">
-<li>Clean the raw data by selecting all countries’ merchandise trade data for the year 2019 to 2020. Copy the table from the raw dataset and paste it into the first row of the new created worksheet by using excel workbook. Clean import and export data are stored in two different worksheets. <img src="img/imp_cl_1.png" alt="Figure 2" /> <img src="img/exp_cl_1.png" alt="Figure 3" /></li>
+<li>Clean the raw data by selecting all countries’ merchandise trade data for the year 2019 to 2020. Copy the table from the raw dataset and paste it into the first row of the new created worksheet by using excel workbook. Clean import and export data are stored in two different worksheets.</li>
 </ol>
+<p>import data:</p>
+<p><img src="img/imp_cl_1.png" alt="Figure 2" /> Export data:</p>
+<figure>
+<img src="img/exp_cl_1.png" alt="" /><figcaption><strong>Figure 3</strong></figcaption>
+</figure>
+<ol start="2" type="1">
+<li>Create a new column in the clean data worksheets to store the country name.</li>
+</ol>
+<figure>
+<img src="img/country.png" alt="" /><figcaption><strong>Figure 4</strong></figcaption>
+</figure>
+<ol start="3" type="1">
+<li>Import the data into tableau and join import and export data by country, the steps are as follows:</li>
+</ol>
+<ul>
+<li>Open tableau and select microsoft excel under connect panel and select the file <img src="img/import_data_tableau.png" /></li>
+<li>Drag the sheets that need to be imported to the workspace one by one <img src="img/import_data_tableau_1.PNG" /></li>
+<li>Edit the relationship by typing country in both of the search bars <img src="img/import_data_tableau_2.PNG" /></li>
+<li>Click “Country1” and Country(T1-Clean(Export)), and the click <strong>close</strong> <img src="img/import_data_tableau_3.png" /></li>
+<li>Hide the unwanted column(s) that is not needed for the data preparation or analysis by clicking the small arrow beside the column name -&gt; hide. <img src="img/import_data_tableau_4.png" /></li>
+<li>Now that the dataset is ready to be used, we can click the new empty sheet and start our visualisation</li>
+</ul>
+<ol start="4" type="1">
+<li>Create a text table by placing country on the rows shelves and monthly import data in columns and then click text table from show me.</li>
+</ol>
+<figure>
+<img src="img/imp_cl_2.png" alt="" /><figcaption><strong>Figure 6</strong></figcaption>
+</figure>
+<p>The text table are shown in the figure below.</p>
+<figure>
+<img src="img/imp_cl_3.png" alt="" /><figcaption><strong>Figure 7</strong></figcaption>
+</figure>
+<ol start="5" type="1">
+<li>Pivot the data from crosstab format to columnar format by viewing the data in tableau. Click “Export All” and save it as excel file.</li>
+</ol>
+<figure>
+<img src="img/view_data_1.png" alt="" /><figcaption><strong>Figure 8</strong></figcaption>
+</figure>
+<figure>
+<img src="img/view_data_2.png" alt="" /><figcaption><strong>Figure 9</strong></figcaption>
+</figure>
+<ol start="6" type="1">
+<li>Split the measure names into two columns (year and month) by using excel for both import and export data.</li>
+</ol>
+<figure>
+<img src="img/split_date.png" alt="" /><figcaption><strong>Figure 10</strong></figcaption>
+</figure>
+<ol start="7" type="1">
+<li>To create a date value in excel, convert the month names into number. Create a new column called “Date” in excel according to the year and month in measure name.</li>
+</ol>
+<p><img src="img/split_date_2.png" alt="Figure 11" /> 8. Repeat step 4 to 7 for merchandise export data. Merge import, export, and total merchandise trade data in columnar format into one excel file to make it easier for importing the data into tableau.</p>
+<p><img src="img/imp_exp_cln.PNG" alt="Figure 12" /> 9. Import clean merchandise data into tableau and join both dataset by country and date (the step by step guide of importing the data can be seen in step 3).Select the merchandise trade data for top six trading countries that were mentioned in the original graph by using filter function in data source tab.</p>
+<p><img src="img/clean_filter.PNG" alt="Figure 13" /> After clicking <strong>add</strong> in filters,click <strong>Add</strong> again in “edit data source filter” window.</p>
+<p><img src="img/clean_filter_3.PNG" alt="Figure 14" /> Select country -&gt; <strong>OK</strong>. Select all the countries that we need for the analysis, by clicking the checkboxes in front of the country.</p>
+<figure>
+<img src="img/clean_filter_4.PNG" alt="" /><figcaption><strong>Figure 14</strong></figcaption>
+</figure>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

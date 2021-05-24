@@ -41,8 +41,65 @@ The proposed design above will improve the original visualisation in terms of:
 # 4. Step-by-Step Guide
 
 1.	Clean the raw data by selecting all countries’ merchandise trade data for the year 2019 to 2020. Copy the table from the raw dataset and paste it into the first row of the new created worksheet by using excel workbook. Clean import and export data are stored in two different worksheets.
+
+import data:
+
 ![**Figure 2**](img/imp_cl_1.png) 
+Export data:
+
 ![**Figure 3**](img/exp_cl_1.png)
 
 
+2. Create a new column in the clean data worksheets to store the country name.
+
+![**Figure 4**](img/country.png)
+
+3.    Import the data into tableau and join import and export data by country, the steps are as follows:
+
+* Open tableau and select microsoft excel under connect panel and select the file
+![](img/import_data_tableau.png)
+* Drag the sheets that need to be imported to the workspace one by one
+![](img/import_data_tableau_1.png)
+* Edit the relationship by typing country in both of the search bars
+![](img/import_data_tableau_2.png)
+* Click "Country1" and Country(T1-Clean(Export)), and the click **close**
+![](img/import_data_tableau_3.png)
+* Hide the unwanted column(s) that is not needed for the data preparation or analysis by clicking the small arrow beside the column name -> hide.
+![](img/import_data_tableau_4.png)
+* Now that the dataset is ready to be used, we can click the new empty sheet and start our visualisation
+
+4. Create a text table by placing country on the rows shelves and monthly import data in columns and then click text table from show me.
+
+![**Figure 6**](img/imp_cl_2.png)
+
+The text table are shown in the figure below.
+
+![**Figure 7**](img/imp_cl_3.png)
+  
+
+5. Pivot the data from crosstab format to columnar format by viewing the data in tableau. Click “Export All” and save it as excel file.
+
+![**Figure 8**](img/view_data_1.png)
+
+![**Figure 9**](img/view_data_2.png)
+
+6. Split the measure names into two columns (year and month) by using excel for both import and export data. 
+
+![**Figure 10**](img/split_date.png)
+
+7. To create a date value in excel, convert the month names into number. Create a new column called “Date” in excel according to the year and month in measure name. 
+
+![**Figure 11**](img/split_date_2.png)
+8. Repeat step 4 to 7 for merchandise export data. Merge import, export, and total merchandise trade data in columnar format into one excel file to make it easier for importing the data into tableau.
+
+![**Figure 12**](img/imp_exp_cln.png)
+9. Import clean merchandise data into tableau and join both dataset by country and date (the step by step guide of importing the data can be seen in step 3).Select the merchandise trade data for top six trading countries that were mentioned in the original graph by using filter function in data source tab.
+
+![**Figure 13**](img/clean_filter.png)
+After clicking **add** in filters,click **Add** again in "edit data source filter" window. 
+
+![**Figure 14**](img/clean_filter_3.png)
+Select country -> **OK**. Select all the countries that we need for the analysis, by clicking the checkboxes in front of the country.
+
+![**Figure 14**](img/clean_filter_4.png)
 
