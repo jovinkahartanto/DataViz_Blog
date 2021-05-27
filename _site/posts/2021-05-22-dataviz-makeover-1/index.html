@@ -117,7 +117,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/clean_filter.PNG","img/clean_filter_2.PNG","img/clean_filter_3.PNG","img/clean_filter_4.PNG","img/country.png","img/exp_cl_1.png","img/imp_cl_1.png","img/imp_cl_2.png","img/imp_cl_3.png","img/imp_exp_clean_import.png","img/imp_exp_cln.PNG","img/imp_tableau_1.png","img/import_data_tableau.png","img/import_data_tableau_1.PNG","img/import_data_tableau_2.PNG","img/import_data_tableau_3.png","img/import_data_tableau_4.png","img/original.PNG","img/split_date.png","img/split_date_2.png","img/view_data_1.png","img/view_data_2.png"]}
+  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/clean_filter.PNG","img/clean_filter_2.PNG","img/clean_filter_3.PNG","img/clean_filter_4.PNG","img/country.png","img/exp_cl_1.png","img/graph_proposal.png","img/imp_cl_1.png","img/imp_cl_2.png","img/imp_cl_3.png","img/imp_exp_clean_import.png","img/imp_exp_cln.PNG","img/imp_tableau_1.png","img/import_data_tableau.png","img/import_data_tableau_1.PNG","img/import_data_tableau_2.PNG","img/import_data_tableau_3.png","img/import_data_tableau_4.png","img/line_vis.PNG","img/line_vis1.png","img/line_vis2.PNG","img/line_vis3.PNG","img/line_vis4.PNG","img/line_vis5.PNG","img/original.PNG","img/split_date.png","img/split_date_2.png","img/view_data_1.png","img/view_data_2.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2108,15 +2108,22 @@ document.addEventListener('DOMContentLoaded', function() {
 <li><strong>The title of the graph does not match the visualisation.</strong> The title leads us to expect that the graph will be showing merchandise trade data for period 2019 to 2020, meanwhile the x-axis label for Japan only shows year of 2020 and the period for the rest of the graph starts from 2019 and ends in 2021.</li>
 <li><strong>The period of the data used is inconsistent.</strong> According to the graph, it seems like it covers merchandise trade data from 2019 to 2021 for Hong Kong, Mainland China, Taiwan, US, and Malaysia. However, we can observe that for Japan, it only covers merchandise trade data in 2020.</li>
 <li><strong>The title of X axis is confusing.</strong> The axis title clearly mentions “Month of Period”, but the x-axis label display years instead of months.</li>
+<li>There is no lead-in or call-outs to provide context</li>
 </ol>
 <h2 id="aesthetics">2.2 Aesthetics</h2>
 <ol type="1">
-<li>The graph will be easier to understand if line graph were used.</li>
-<li>Adding tick marks for both axis will be necessary since this graph is a continuous scale. The non existence of the graph make it harder to read the graph.</li>
+<li><strong>It is difficult to see some data points in the chart</strong>.The graph will be easier to understand if line graph were used.The area graph make some data points harder to read, since some of the data points are overlapped between import and export.</li>
+<li><strong>There is no tick marks for both axis</strong> even though this graph is a continuous scale. The non existence of the graph make it harder to read the graph.</li>
+<li><strong>The choices of colors can be improved</strong>. More contrast colors might able to make the graph easier to read.</li>
+<li><strong>The title does not align with the graphs</strong>. The placing of the title is not in the center nor left-aligned.</li>
 </ol>
 <h1 id="alternative-design">3. Alternative Design</h1>
 <p>The alternative graphical design proposed can be seen below:</p>
+<p><img src="img/graph_proposal.png" /></p>
 <p>The proposed design above will improve the original visualisation in terms of:</p>
+<h1 id="clarity-1">Clarity:</h1>
+<h1 id="aesthetics-1">Aesthetics:</h1>
+<p>Additionally the proposed design will give an overview of the comparison of export and import data between the top six countries and it will also shows which country has higher import than export and vice versa.</p>
 <h1 id="step-by-step-guide">4. Step-by-Step Guide</h1>
 <ol type="1">
 <li>Clean the raw data by selecting all countries’ merchandise trade data for the year 2019 to 2020. Copy the table from the raw dataset and paste it into the first row of the new created worksheet by using excel workbook. Clean import and export data are stored in two different worksheets.</li>
@@ -2175,9 +2182,14 @@ document.addEventListener('DOMContentLoaded', function() {
 <p><img src="img/imp_exp_cln.PNG" alt="Figure 12" /> 9. Import clean merchandise data into tableau and join both dataset by country and date (the step by step guide of importing the data can be seen in step 3).Select the merchandise trade data for top six trading countries that were mentioned in the original graph by using filter function in data source tab.</p>
 <p><img src="img/clean_filter.PNG" alt="Figure 13" /> After clicking <strong>add</strong> in filters,click <strong>Add</strong> again in “edit data source filter” window.</p>
 <p><img src="img/clean_filter_3.PNG" alt="Figure 14" /> Select country -&gt; <strong>OK</strong>. Select all the countries that we need for the analysis, by clicking the checkboxes in front of the country.</p>
-<figure>
-<img src="img/clean_filter_4.PNG" alt="" /><figcaption><strong>Figure 14</strong></figcaption>
-</figure>
+<p><img src="img/clean_filter_4.PNG" alt="Figure 14" /> After the filter was applied, the top six merchandise trade data is ready to be used for the analysis.</p>
+<ol start="10" type="1">
+<li>The first visualisation will be using monthly import and export data for each country. Drag export and import data to Rows shelf and drag country into colour. <img src="img/line_vis.PNG" /> click the small arrow in “Year” inside the column shelf, select month that is highlighted in blue. <img src="img/line_vis1.png" /> Right Click on X-axis to edit the date range <img src="img/line_vis2.PNG" /> Change the date range, title, and tick marks settings as per below</li>
+</ol>
+<p><img src="img/line_vis3.PNG" /></p>
+<p><img src="img/line_vis4.PNG" /></p>
+<p>Right Click on the X-axis -&gt; Format, to edit the label’s and tick marks’ font and colour.Change the tick mark colour to black, custom the data format to <strong>mmm yy</strong>, and choose <strong>up</strong> for the alignment.</p>
+<p><img src="img/line_vis5.PNG" /></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
