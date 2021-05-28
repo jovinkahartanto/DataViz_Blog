@@ -117,7 +117,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/clean_filter.PNG","img/clean_filter_2.PNG","img/clean_filter_3.PNG","img/clean_filter_4.PNG","img/country.png","img/exp_cl_1.png","img/graph_proposal.png","img/imp_cl_1.png","img/imp_cl_2.png","img/imp_cl_3.png","img/imp_exp_clean_import.png","img/imp_exp_cln.PNG","img/imp_tableau_1.png","img/import_data_tableau.png","img/import_data_tableau_1.PNG","img/import_data_tableau_2.PNG","img/import_data_tableau_3.png","img/import_data_tableau_4.png","img/line_vis.PNG","img/line_vis1.png","img/line_vis2.PNG","img/line_vis3.PNG","img/line_vis4.PNG","img/line_vis5.PNG","img/original.PNG","img/split_date.png","img/split_date_2.png","img/view_data_1.png","img/view_data_2.png"]}
+  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/clean_filter.PNG","img/clean_filter_2.PNG","img/clean_filter_3.PNG","img/clean_filter_4.PNG","img/country.png","img/exp_cl_1.png","img/graph_proposal.png","img/imp_cl_1.png","img/imp_cl_2.png","img/imp_cl_3.png","img/imp_exp_clean_import.png","img/imp_exp_cln.PNG","img/imp_exp_grf1.PNG","img/imp_exp_grf10.PNG","img/imp_exp_grf11.PNG","img/imp_exp_grf12.PNG","img/imp_exp_grf2.png","img/imp_exp_grf3.png","img/imp_exp_grf4.png","img/imp_exp_grf5.png","img/imp_exp_grf6.png","img/imp_exp_grf7.PNG","img/imp_exp_grf8.PNG","img/imp_exp_grf9.PNG","img/imp_tableau_1.png","img/import_data_tableau.png","img/import_data_tableau_1.PNG","img/import_data_tableau_2.PNG","img/import_data_tableau_3.png","img/import_data_tableau_4.png","img/line_vis.PNG","img/line_vis1.png","img/line_vis2.PNG","img/line_vis3.PNG","img/line_vis4.PNG","img/line_vis5.PNG","img/original.PNG","img/split_date.png","img/split_date_2.png","img/view_data_1.png","img/view_data_2.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2190,6 +2190,52 @@ document.addEventListener('DOMContentLoaded', function() {
 <p><img src="img/line_vis4.PNG" /></p>
 <p>Right Click on the X-axis -&gt; Format, to edit the label’s and tick marks’ font and colour.Change the tick mark colour to black, custom the data format to <strong>mmm yy</strong>, and choose <strong>up</strong> for the alignment.</p>
 <p><img src="img/line_vis5.PNG" /></p>
+<ol start="11" type="1">
+<li>The second graph is to show which countries are net importer and which are net exporter</li>
+</ol>
+<ul>
+<li>Drag <strong>Date</strong> and <strong>Export</strong> to column shelf and drag <strong>import</strong> to row shelf</li>
+<li>Drag <strong>Country</strong> to Text and Detail, drag <strong>Date</strong> to Color</li>
+</ul>
+<p><img src="img/imp_exp_grf1.PNG" /></p>
+<ul>
+<li>Hide the legend of the graph, by clicking the small arrow in the legend -&gt; click <strong>Hide Card</strong></li>
+</ul>
+<p><img src="img/imp_exp_grf2.png" /></p>
+<p>To create the 45 degree line, the steps are as follow:</p>
+<ul>
+<li>Drag <strong>Import</strong> to columns shelf -&gt; Click the small arrow -&gt; Dual Axis</li>
+</ul>
+<p><img src="img/imp_exp_grf3.png" /></p>
+<ul>
+<li><p>Click <strong>Sum(Import)</strong> in the columns shelf and edit the components under marks shelf</p></li>
+<li><p>Remove <strong>Country</strong>(Text - SUM(Import)) from Marks shelf <img src="img/imp_exp_grf5.png" /></p></li>
+<li><p>Click <strong>Color</strong> in SUM(Import), change the opacity to 0% <img src="img/imp_exp_grf4.png" /></p></li>
+<li><p>Right click on the graph -&gt; <strong>Trend Lines</strong> -&gt; <strong>Show Trend Lines</strong> -&gt; SUM(Import)</p></li>
+</ul>
+<p><img src="img/imp_exp_grf6.png" /> * Change the axis range to fixed -&gt; change <strong>Fixed start</strong> and <strong>Fixed end</strong></p>
+<p><img src="img/imp_exp_grf7.PNG" /></p>
+<ul>
+<li>Make sure all these 5 axis have same range</li>
+</ul>
+<p><img src="img/imp_exp_grf8.PNG" /></p>
+<ul>
+<li><p>Change the format of the 45 degree line by double clicking -&gt; Format</p></li>
+<li><p>Change the format of the trend line to dotted line</p></li>
+</ul>
+<p><img src="img/imp_exp_grf9.PNG" /> * Hide the header for the top axis. Right click on the axis -&gt; <strong>Show Header</strong></p>
+<p><img src="img/imp_exp_grf10.PNG" /></p>
+<ul>
+<li>Hide field labels for columns</li>
+</ul>
+<p><img src="img/imp_exp_grf11.PNG" /></p>
+<ul>
+<li>Change the color of the graph by choosing color for SUM(Export) in Marks shelf -&gt; choose the data item -&gt; choose the color</li>
+</ul>
+<p><img src="img/imp_exp_grf12.PNG" /></p>
+<ol start="12" type="1">
+<li>The third graph is to find the percentage change of total merchandise trade for each country for the year 2019 to 2020.</li>
+</ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
