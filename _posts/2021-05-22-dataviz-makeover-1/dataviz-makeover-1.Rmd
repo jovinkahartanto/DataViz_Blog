@@ -132,3 +132,62 @@ Change the date range, title, and tick marks settings as per below
 Right Click on the X-axis -> Format, to edit the label's and tick marks' font and colour.Change the tick mark colour to black, custom the data format to **mmm yy**, and choose **up** for the alignment.
 
 ![](img/line_vis5.png)
+
+11. The second graph is to show which countries are net importer and which are net exporter
+
+* Drag **Date** and **Export** to column shelf and drag **import** to row shelf
+* Drag **Country** to Text and Detail, drag **Date** to Color
+
+![](img/imp_exp_grf1.png)
+
+* Hide the legend of the graph, by clicking the small arrow in the legend -> click **Hide Card**
+
+![](img/imp_exp_grf2.png)
+
+
+To create the 45 degree line, the steps are as follow:
+
+* Drag **Import** to columns shelf -> Click the small arrow -> Dual Axis
+
+![](img/imp_exp_grf3.png)
+
+* Click **Sum(Import)** in the columns shelf and edit the components under marks shelf
+
+* Remove **Country**(Text - SUM(Import)) from Marks shelf
+![](img/imp_exp_grf5.png)
+
+* Click **Color** in SUM(Import), change the opacity to 0%
+![](img/imp_exp_grf4.png)
+
+* Right click on the graph -> **Trend Lines** -> **Show Trend Lines** -> SUM(Import)
+
+![](img/imp_exp_grf6.png)
+* Change the axis range to fixed -> change **Fixed start** and **Fixed end**
+
+![](img/imp_exp_grf7.png)
+
+
+* Make sure all these 5 axis have same range
+
+![](img/imp_exp_grf8.png)
+
+* Change the format of the 45 degree line by double clicking -> Format
+
+* Change the format of the trend line to dotted line
+
+![](img/imp_exp_grf9.png)
+* Hide the header for the top axis. Right click on the axis -> **Show Header**
+
+![](img/imp_exp_grf10.png)
+
+
+* Hide field labels for columns
+
+![](img/imp_exp_grf11.png)
+
+* Change the color of the graph by choosing color for SUM(Export) in Marks shelf -> choose the data item -> choose the color
+
+![](img/imp_exp_grf12.png)
+
+
+12. The third graph is to find the percentage change of total merchandise trade for each country for the year 2019 to 2020.
