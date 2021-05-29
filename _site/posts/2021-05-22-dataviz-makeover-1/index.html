@@ -117,7 +117,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/clean_filter.PNG","img/clean_filter_2.PNG","img/clean_filter_3.PNG","img/clean_filter_4.PNG","img/country.png","img/exp_cl_1.png","img/graph_proposal.png","img/imp_cl_1.png","img/imp_cl_2.png","img/imp_cl_3.png","img/imp_exp_clean_import.png","img/imp_exp_cln.PNG","img/imp_exp_grf1.PNG","img/imp_exp_grf10.PNG","img/imp_exp_grf11.PNG","img/imp_exp_grf12.PNG","img/imp_exp_grf13.PNG","img/imp_exp_grf2.png","img/imp_exp_grf3.png","img/imp_exp_grf4.png","img/imp_exp_grf5.png","img/imp_exp_grf6.png","img/imp_exp_grf7.PNG","img/imp_exp_grf8.PNG","img/imp_exp_grf9.PNG","img/imp_tableau_1.png","img/import_data_tableau.png","img/import_data_tableau_1.PNG","img/import_data_tableau_2.PNG","img/import_data_tableau_3.png","img/import_data_tableau_4.png","img/line_vis.PNG","img/line_vis1.png","img/line_vis2.PNG","img/line_vis3.PNG","img/line_vis4.PNG","img/line_vis5.PNG","img/original.PNG","img/pcdiff_1.PNG","img/pcdiff_2.png","img/pcdiff_3.png","img/pcdiff_4.png","img/pcdiff_5.png","img/pcdiff_6.png","img/pcdiff_7.png","img/split_date.png","img/split_date_2.png","img/view_data_1.png","img/view_data_2.png"]}
+  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/clean_filter.PNG","img/clean_filter_2.PNG","img/clean_filter_3.PNG","img/clean_filter_4.PNG","img/country.png","img/db1.PNG","img/db2.png","img/db3.PNG","img/exp_cl_1.png","img/graph_proposal.png","img/imp_cl_1.png","img/imp_cl_2.png","img/imp_cl_3.png","img/imp_exp_clean_import.png","img/imp_exp_cln.PNG","img/imp_exp_grf1.PNG","img/imp_exp_grf10.PNG","img/imp_exp_grf11.PNG","img/imp_exp_grf12.PNG","img/imp_exp_grf13.PNG","img/imp_exp_grf14.PNG","img/imp_exp_grf2.png","img/imp_exp_grf3.png","img/imp_exp_grf4.png","img/imp_exp_grf5.png","img/imp_exp_grf6.png","img/imp_exp_grf7.PNG","img/imp_exp_grf8.PNG","img/imp_exp_grf9.PNG","img/imp_tableau_1.png","img/import_data_tableau.png","img/import_data_tableau_1.PNG","img/import_data_tableau_2.PNG","img/import_data_tableau_3.png","img/import_data_tableau_4.png","img/line_vis.PNG","img/line_vis1.png","img/line_vis2.PNG","img/line_vis3.PNG","img/line_vis4.PNG","img/line_vis5.PNG","img/original.PNG","img/pcdiff_1.PNG","img/pcdiff_2.png","img/pcdiff_3.png","img/pcdiff_4.png","img/pcdiff_5.png","img/pcdiff_6.png","img/pcdiff_7.png","img/split_date.png","img/split_date_2.png","img/view_data_1.png","img/view_data_2.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2122,7 +2122,12 @@ document.addEventListener('DOMContentLoaded', function() {
 <p><img src="img/graph_proposal.png" /></p>
 <p>The proposed design above will improve the original visualisation in terms of:</p>
 <h1 id="clarity-1">Clarity:</h1>
-<h1 id="aesthetics-1">Aesthetics:</h1>
+<ol type="1">
+<li><p>Line graph is used for the visualisation and the label of x-axis is changed to month and year. These two combination will make it easier to see the merchandise trade’s trend for each country.</p></li>
+<li><p>Export and Import were split into two different graph, which make it easier to compare import and export trend among the top six Singapore’s merchandise trade partners.</p></li>
+<li><p>Additional charts will be added to paint a clearer picture of how the export and import values changed from 2019 to 2020 for each country. The scatter plot will also show the relationship between of export value and import value for each top trading partners. # Aesthetics:</p></li>
+<li><p>Major tick marks was added in line graph since it is continuous data.Tick marks will make the graph easier to read.</p></li>
+</ol>
 <p>Additionally the proposed design will give an overview of the comparison of export and import data between the top six countries and it will also shows which country has higher import than export and vice versa.</p>
 <h1 id="step-by-step-guide">4. Step-by-Step Guide</h1>
 <h2 id="data-preparation">4.1 Data Preparation</h2>
@@ -2243,8 +2248,10 @@ document.addEventListener('DOMContentLoaded', function() {
 </ol>
 <p><img src="img/imp_exp_grf12.PNG" /></p>
 <ol start="8" type="1">
-<li>Change the title of the graph by double clicking the title -&gt; Change the title -&gt; <strong>Apply</strong> -&gt; <strong>OK</strong> <img src="img/imp_exp_grf13.PNG" /></li>
+<li><p>Change the title of the graph by double clicking the title -&gt; Change the title -&gt; <strong>Apply</strong> -&gt; <strong>OK</strong> <img src="img/imp_exp_grf13.PNG" /></p></li>
+<li><p>Add the annotation by right clicking the graph -&gt; <strong>Annotate</strong> -&gt; Area</p></li>
 </ol>
+<p><img src="img/imp_exp_grf14.PNG" /></p>
 <h2 id="yearly-merchandise-trade-comparison-by-country-2019-2020">4.4 Yearly Merchandise Trade Comparison by Country, 2019-2020</h2>
 <p>The third graph is to find the percentage change of total merchandise trade for each country for the year 2019 to 2020.</p>
 <ol type="1">
@@ -2274,6 +2281,34 @@ document.addEventListener('DOMContentLoaded', function() {
 <ol start="6" type="1">
 <li>Repeat step 1 to 5 to show the percent difference for import graph</li>
 </ol>
+<h2 id="dashboard">4.5 Dashboard</h2>
+<p>Consolidate all the three worksheets into one dashboard.</p>
+<ol type="1">
+<li>To create a new dashboard, click the <strong>New Dashboard Tab</strong></li>
+</ol>
+<p><img src="img/db1.PNG" /></p>
+<ol start="2" type="1">
+<li>We can adjust the dashboard size, change <strong>Fixed size</strong> to <strong>Automatic</strong> is highly recommended</li>
+</ol>
+<p><img src="img/db2.png" /></p>
+<ol start="3" type="1">
+<li>Drag the worksheets to the canvas, tick <strong>Show dashboard title</strong> if needed</li>
+</ol>
+<p><img src="img/db3.PNG" /></p>
+<ol start="4" type="1">
+<li>Change the dashboard title by double clicking the title, same as changing the worksheet’s title</li>
+<li>The final dashboard is ready</li>
+</ol>
+<h1 id="major-obeservations">5.0 Major Obeservations</h1>
+<ol type="1">
+<li><p>Among the top six Singapore’s trading partners, <strong>the number of countries that has value of goods exported by Singapore exceeds the goods imported by them in 2020 is higher compare to 2019</strong>. In 2019, the value of exports exceed imports for Singapore’s merchandise trade with Mainland China and Hong Kong. In comparison, in 2020 the value of exports also exceeds imports for the merchandise trade with US.</p></li>
+<li><p>The biggest export destination of Singapore’s goods is Mainland China, followed by Hong Kong for both years, 2019 and 2020. However, Hong Kong has extremely high export value compare to its import value, which made Hong Kong the biggest contributor to Singapore <a href="https://www.investopedia.com/terms/n/netexports.asp">net exports</a> value.</p></li>
+<li><p>The import value from United States decreased by by almost 19% in 2020, it can be seen that the value is actually started to decrease at the end of 2019, it decreased even more in mid 2020.</p></li>
+<li><p>Export values from Singapore to Malaysia decreased by 18.24% in 2020, it can be observed that the value started to decrease in early 2020, this might be due to a lack for demand in petroleum products because of the Covid-19 pandemic.</p></li>
+</ol>
+<p>In 2019, the main product that Singapore exported to Malaysia is refined petroleum and the petroleum products export from Singapore in Apr-Jul 2020 is around 55% lower than Apr-Jul 2019.</p>
+<p><a href="https://oec.world/en/profile/bilateral-country/mys/partner/sgp">Malaysia (MYS) and Singapore (SGP) Trade</a></p>
+<p>[Bruce-Lockhart, 2020] (<a href="https://www.ft.com/content/193e1ddb-9e61-413f-ab7d-df7a52f30413" class="uri">https://www.ft.com/content/193e1ddb-9e61-413f-ab7d-df7a52f30413</a>)</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

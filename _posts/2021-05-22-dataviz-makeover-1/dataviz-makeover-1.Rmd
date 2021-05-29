@@ -44,8 +44,13 @@ The alternative graphical design proposed can be seen below:
 The proposed design above will improve the original visualisation in terms of:
 
 # Clarity:
+1. Line graph is used for the visualisation and the label of x-axis is changed to month and year. These two combination will make it easier to see the merchandise trade's trend for each country.
 
+2. Export and Import were split into two different graph, which make it easier to compare import and export trend among the top six Singapore's merchandise trade partners.
+
+3. Additional charts will be added to paint a clearer picture of how the export and import values changed from 2019 to 2020 for each country. The scatter plot will also show the relationship between of export value and import value for each top trading partners.
 # Aesthetics:
+1. Major tick marks was added in line graph since it is continuous data.Tick marks will make the graph easier to read.
 
 Additionally the proposed design will give an overview of the comparison of export and import data between the top six countries and it will also shows which country has higher import than export and vice versa.
 
@@ -254,3 +259,19 @@ Consolidate all the three worksheets into one dashboard.
 
 4. Change the dashboard title by double clicking the title, same as changing the worksheet's title
 5. The final dashboard is ready
+
+# 5.0 Major Obeservations
+
+1. Among the top six Singapore's trading partners, **the number of countries that has value of goods exported by Singapore exceeds the goods imported by them in 2020 is higher compare to 2019**. In 2019, the value of exports exceed imports for Singapore's merchandise trade with Mainland China and Hong Kong. In comparison, in 2020 the value of exports also exceeds imports for the merchandise trade with US. 
+
+2. The biggest export destination of Singapore's goods is Mainland China, followed by Hong Kong for both years, 2019 and 2020. However, Hong Kong has extremely high export value compare to its import value, which made Hong Kong the biggest contributor to Singapore [net exports](https://www.investopedia.com/terms/n/netexports.asp) value.
+
+3. The import value from United States decreased by by almost 19% in 2020, it can be seen that the value is actually started to decrease at the end of 2019, it decreased even more in mid 2020. 
+
+4. Export values from Singapore to Malaysia decreased by 18.24% in 2020, it can be observed that the value started to decrease in early 2020, this might be due to a lack for demand in petroleum products because of the Covid-19 pandemic.
+
+In 2019, the main product that Singapore exported to Malaysia is refined petroleum and the petroleum products export from Singapore in Apr-Jul 2020 is around 55% lower than Apr-Jul 2019.
+
+[Malaysia (MYS) and Singapore (SGP) Trade](https://oec.world/en/profile/bilateral-country/mys/partner/sgp)
+
+[Bruce-Lockhart, 2020] (https://www.ft.com/content/193e1ddb-9e61-413f-ab7d-df7a52f30413)
