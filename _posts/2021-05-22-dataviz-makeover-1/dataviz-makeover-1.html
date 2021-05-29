@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/clean_filter.PNG","img/clean_filter_2.PNG","img/clean_filter_3.PNG","img/clean_filter_4.PNG","img/country.png","img/exp_cl_1.png","img/graph_proposal.png","img/imp_cl_1.png","img/imp_cl_2.png","img/imp_cl_3.png","img/imp_exp_clean_import.png","img/imp_exp_cln.PNG","img/imp_exp_grf1.PNG","img/imp_exp_grf10.PNG","img/imp_exp_grf11.PNG","img/imp_exp_grf12.PNG","img/imp_exp_grf2.png","img/imp_exp_grf3.png","img/imp_exp_grf4.png","img/imp_exp_grf5.png","img/imp_exp_grf6.png","img/imp_exp_grf7.PNG","img/imp_exp_grf8.PNG","img/imp_exp_grf9.PNG","img/imp_tableau_1.png","img/import_data_tableau.png","img/import_data_tableau_1.PNG","img/import_data_tableau_2.PNG","img/import_data_tableau_3.png","img/import_data_tableau_4.png","img/line_vis.PNG","img/line_vis1.png","img/line_vis2.PNG","img/line_vis3.PNG","img/line_vis4.PNG","img/line_vis5.PNG","img/original.PNG","img/split_date.png","img/split_date_2.png","img/view_data_1.png","img/view_data_2.png"]}
+  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/clean_filter.PNG","img/clean_filter_2.PNG","img/clean_filter_3.PNG","img/clean_filter_4.PNG","img/country.png","img/exp_cl_1.png","img/graph_proposal.png","img/imp_cl_1.png","img/imp_cl_2.png","img/imp_cl_3.png","img/imp_exp_clean_import.png","img/imp_exp_cln.PNG","img/imp_exp_grf1.PNG","img/imp_exp_grf10.PNG","img/imp_exp_grf11.PNG","img/imp_exp_grf12.PNG","img/imp_exp_grf13.PNG","img/imp_exp_grf2.png","img/imp_exp_grf3.png","img/imp_exp_grf4.png","img/imp_exp_grf5.png","img/imp_exp_grf6.png","img/imp_exp_grf7.PNG","img/imp_exp_grf8.PNG","img/imp_exp_grf9.PNG","img/imp_tableau_1.png","img/import_data_tableau.png","img/import_data_tableau_1.PNG","img/import_data_tableau_2.PNG","img/import_data_tableau_3.png","img/import_data_tableau_4.png","img/line_vis.PNG","img/line_vis1.png","img/line_vis2.PNG","img/line_vis3.PNG","img/line_vis4.PNG","img/line_vis5.PNG","img/original.PNG","img/pcdiff_1.PNG","img/pcdiff_2.png","img/pcdiff_3.png","img/pcdiff_4.png","img/pcdiff_5.png","img/pcdiff_6.png","img/pcdiff_7.png","img/split_date.png","img/split_date_2.png","img/view_data_1.png","img/view_data_2.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1505,6 +1505,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1 id="aesthetics-1">Aesthetics:</h1>
 <p>Additionally the proposed design will give an overview of the comparison of export and import data between the top six countries and it will also shows which country has higher import than export and vice versa.</p>
 <h1 id="step-by-step-guide">4. Step-by-Step Guide</h1>
+<h2 id="data-preparation">4.1 Data Preparation</h2>
 <ol type="1">
 <li>Clean the raw data by selecting all countries’ merchandise trade data for the year 2019 to 2020. Copy the table from the raw dataset and paste it into the first row of the new created worksheet by using excel workbook. Clean import and export data are stored in two different worksheets.</li>
 </ol>
@@ -1563,26 +1564,34 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><img src="img/clean_filter.PNG" alt="Figure 13" /> After clicking <strong>add</strong> in filters,click <strong>Add</strong> again in “edit data source filter” window.</p>
 <p><img src="img/clean_filter_3.PNG" alt="Figure 14" /> Select country -&gt; <strong>OK</strong>. Select all the countries that we need for the analysis, by clicking the checkboxes in front of the country.</p>
 <p><img src="img/clean_filter_4.PNG" alt="Figure 14" /> After the filter was applied, the top six merchandise trade data is ready to be used for the analysis.</p>
-<ol start="10" type="1">
-<li>The first visualisation will be using monthly import and export data for each country. Drag export and import data to Rows shelf and drag country into colour. <img src="img/line_vis.PNG" /> click the small arrow in “Year” inside the column shelf, select month that is highlighted in blue. <img src="img/line_vis1.png" /> Right Click on X-axis to edit the date range <img src="img/line_vis2.PNG" /> Change the date range, title, and tick marks settings as per below</li>
+<h2 id="monthly-merchandise-trade-performance-2019--2020">4.2 Monthly Merchandise Trade Performance, 2019 -2020</h2>
+<p>This visualisation will be using monthly import and export data for each country.</p>
+<ol type="1">
+<li>Drag export and import data to Rows shelf and drag country into colour. <img src="img/line_vis.PNG" /></li>
+<li>click the small arrow in “Year” inside the column shelf, select month that is highlighted in blue. <img src="img/line_vis1.png" /></li>
+<li>Right Click on X-axis to edit the date range <img src="img/line_vis2.PNG" /></li>
+<li>Change the date range, title, and tick marks settings as per below</li>
 </ol>
 <p><img src="img/line_vis3.PNG" /></p>
 <p><img src="img/line_vis4.PNG" /></p>
-<p>Right Click on the X-axis -&gt; Format, to edit the label’s and tick marks’ font and colour.Change the tick mark colour to black, custom the data format to <strong>mmm yy</strong>, and choose <strong>up</strong> for the alignment.</p>
-<p><img src="img/line_vis5.PNG" /></p>
-<ol start="11" type="1">
-<li>The second graph is to show which countries are net importer and which are net exporter</li>
+<ol start="5" type="1">
+<li>Right Click on the X-axis -&gt; Format, to edit the label’s and tick marks’ font and colour.Change the tick mark colour to black, custom the data format to <strong>mmm yy</strong>, and choose <strong>up</strong> for the alignment.</li>
 </ol>
-<ul>
+<p><img src="img/line_vis5.PNG" /></p>
+<h2 id="net-importers-and-net-exporters-2019---2020">4.3 Net Importers and Net Exporters, 2019 - 2020</h2>
+<p>This graph is to show which countries are net importer and which are net exporter</p>
+<ol type="1">
 <li>Drag <strong>Date</strong> and <strong>Export</strong> to column shelf and drag <strong>import</strong> to row shelf</li>
 <li>Drag <strong>Country</strong> to Text and Detail, drag <strong>Date</strong> to Color</li>
-</ul>
+</ol>
 <p><img src="img/imp_exp_grf1.PNG" /></p>
-<ul>
+<ol start="3" type="1">
 <li>Hide the legend of the graph, by clicking the small arrow in the legend -&gt; click <strong>Hide Card</strong></li>
-</ul>
+</ol>
 <p><img src="img/imp_exp_grf2.png" /></p>
-<p>To create the 45 degree line, the steps are as follow:</p>
+<ol start="4" type="1">
+<li>To create the 45 degree line, the steps are as follow:</li>
+</ol>
 <ul>
 <li>Drag <strong>Import</strong> to columns shelf -&gt; Click the small arrow -&gt; Dual Axis</li>
 </ul>
@@ -1603,18 +1612,47 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li><p>Change the format of the 45 degree line by double clicking -&gt; Format</p></li>
 <li><p>Change the format of the trend line to dotted line</p></li>
 </ul>
-<p><img src="img/imp_exp_grf9.PNG" /> * Hide the header for the top axis. Right click on the axis -&gt; <strong>Show Header</strong></p>
+<p><img src="img/imp_exp_grf9.PNG" /> 5. Hide the header for the top axis. Right click on the axis -&gt; <strong>Show Header</strong></p>
 <p><img src="img/imp_exp_grf10.PNG" /></p>
-<ul>
+<ol start="6" type="1">
 <li>Hide field labels for columns</li>
-</ul>
+</ol>
 <p><img src="img/imp_exp_grf11.PNG" /></p>
-<ul>
+<ol start="7" type="1">
 <li>Change the color of the graph by choosing color for SUM(Export) in Marks shelf -&gt; choose the data item -&gt; choose the color</li>
-</ul>
+</ol>
 <p><img src="img/imp_exp_grf12.PNG" /></p>
-<ol start="12" type="1">
-<li>The third graph is to find the percentage change of total merchandise trade for each country for the year 2019 to 2020.</li>
+<ol start="8" type="1">
+<li>Change the title of the graph by double clicking the title -&gt; Change the title -&gt; <strong>Apply</strong> -&gt; <strong>OK</strong> <img src="img/imp_exp_grf13.PNG" /></li>
+</ol>
+<h2 id="yearly-merchandise-trade-comparison-by-country-2019-2020">4.4 Yearly Merchandise Trade Comparison by Country, 2019-2020</h2>
+<p>The third graph is to find the percentage change of total merchandise trade for each country for the year 2019 to 2020.</p>
+<ol type="1">
+<li>Drag <strong>Country</strong> and <strong>Date</strong> to columns shelf -&gt; Drag <strong>Export</strong> to rows shelf twice</li>
+</ol>
+<p><img src="img/pcdiff_1.PNG" /></p>
+<ol start="2" type="1">
+<li>Click the small arrow in one of the SUM(Export) -&gt; Dual Axis</li>
+</ol>
+<p><img src="img/pcdiff_2.png" /></p>
+<ol start="3" type="1">
+<li>Change one of the Sum(Export) line graph to circle under Marks shelf. Do this for import graph too. Adjust the circle by clicking size.</li>
+</ol>
+<p><img src="img/pcdiff_3.png" /></p>
+<ol start="4" type="1">
+<li>To make the graph clearer, set a different color for different year for both import and export circle graph by dragging <strong>Date</strong> to color.</li>
+</ol>
+<p><img src="img/pcdiff_4.png" /></p>
+<ol start="5" type="1">
+<li>Percent difference was calculated for each country to see how the merchandise trade changes from 2019 to 2020. The steps to add percent difference are as follow:</li>
+</ol>
+<ul>
+<li><p>Drag <strong>Export</strong> to line graph SUM(Export) - Label <img src="img/pcdiff_5.png" /></p></li>
+<li><p>Click the small white arrow in line graph SUM(Export) inside the <strong>Marks Shelf</strong> -&gt; <strong>Quick Table Calculation</strong> -&gt; <strong>Percent Difference</strong> <img src="img/pcdiff_6.png" /></p></li>
+<li><p>Click the small white arrow again -&gt; <strong>Calculate Using</strong> -&gt; <strong>Date</strong> <img src="img/pcdiff_7.png" /></p></li>
+</ul>
+<ol start="6" type="1">
+<li>Repeat step 1 to 5 to show the percent difference for import graph</li>
 </ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

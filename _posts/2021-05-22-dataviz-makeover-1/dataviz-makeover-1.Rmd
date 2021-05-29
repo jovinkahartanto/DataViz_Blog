@@ -51,6 +51,8 @@ Additionally the proposed design will give an overview of the comparison of expo
 
 # 4. Step-by-Step Guide
 
+## 4.1 Data Preparation
+
 1.	Clean the raw data by selecting all countries’ merchandise trade data for the year 2019 to 2020. Copy the table from the raw dataset and paste it into the first row of the new created worksheet by using excel workbook. Clean import and export data are stored in two different worksheets.
 
 import data:
@@ -115,37 +117,42 @@ Select country -> **OK**. Select all the countries that we need for the analysis
 ![**Figure 14**](img/clean_filter_4.png)
 After the filter was applied, the top six merchandise trade data is ready to be used for the analysis.
 
-10. The first visualisation will be using monthly import and export data for each country.
-Drag export and import data to Rows shelf and drag country into colour.
+
+## 4.2 Monthly Merchandise Trade Performance, 2019 -2020
+This visualisation will be using monthly import and export data for each country.
+
+1. Drag export and import data to Rows shelf and drag country into colour.
 ![](img/line_vis.png)
-click the small arrow in "Year" inside the column shelf, select month that is highlighted in blue.
+2. click the small arrow in "Year" inside the column shelf, select month that is highlighted in blue.
 ![](img/line_vis1.png)
-Right Click on X-axis to edit the date range
+3. Right Click on X-axis to edit the date range
 ![](img/line_vis2.png)
-Change the date range, title, and tick marks settings as per below
+4. Change the date range, title, and tick marks settings as per below
 
 ![](img/line_vis3.png)
 
 ![](img/line_vis4.png)
 
 
-Right Click on the X-axis -> Format, to edit the label's and tick marks' font and colour.Change the tick mark colour to black, custom the data format to **mmm yy**, and choose **up** for the alignment.
+5. Right Click on the X-axis -> Format, to edit the label's and tick marks' font and colour.Change the tick mark colour to black, custom the data format to **mmm yy**, and choose **up** for the alignment.
 
 ![](img/line_vis5.png)
 
-11. The second graph is to show which countries are net importer and which are net exporter
+## 4.3 Net Importers and Net Exporters, 2019 - 2020
 
-* Drag **Date** and **Export** to column shelf and drag **import** to row shelf
-* Drag **Country** to Text and Detail, drag **Date** to Color
+This graph is to show which countries are net importer and which are net exporter
+
+1. Drag **Date** and **Export** to column shelf and drag **import** to row shelf
+2. Drag **Country** to Text and Detail, drag **Date** to Color
 
 ![](img/imp_exp_grf1.png)
 
-* Hide the legend of the graph, by clicking the small arrow in the legend -> click **Hide Card**
+3. Hide the legend of the graph, by clicking the small arrow in the legend -> click **Hide Card**
 
 ![](img/imp_exp_grf2.png)
 
 
-To create the 45 degree line, the steps are as follow:
+4. To create the 45 degree line, the steps are as follow:
 
 * Drag **Import** to columns shelf -> Click the small arrow -> Dual Axis
 
@@ -176,18 +183,74 @@ To create the 45 degree line, the steps are as follow:
 * Change the format of the trend line to dotted line
 
 ![](img/imp_exp_grf9.png)
-* Hide the header for the top axis. Right click on the axis -> **Show Header**
+5. Hide the header for the top axis. Right click on the axis -> **Show Header**
 
 ![](img/imp_exp_grf10.png)
 
 
-* Hide field labels for columns
+6. Hide field labels for columns
 
 ![](img/imp_exp_grf11.png)
 
-* Change the color of the graph by choosing color for SUM(Export) in Marks shelf -> choose the data item -> choose the color
+7. Change the color of the graph by choosing color for SUM(Export) in Marks shelf -> choose the data item -> choose the color
 
 ![](img/imp_exp_grf12.png)
 
+8. Change the title of the graph by double clicking the title -> Change the title -> **Apply** -> **OK**
+![](img/imp_exp_grf13.png)
 
-12. The third graph is to find the percentage change of total merchandise trade for each country for the year 2019 to 2020.
+9. Add the annotation by right clicking the graph -> **Annotate** -> Area
+
+![](img/imp_exp_grf14.png)
+
+## 4.4 Yearly Merchandise Trade Comparison by Country, 2019-2020
+
+The third graph is to find the percentage change of total merchandise trade for each country for the year 2019 to 2020.
+
+1. Drag **Country** and **Date** to columns shelf -> Drag **Export** to rows shelf twice
+
+![](img/pcdiff_1.png)
+
+2. Click the small arrow in one of the SUM(Export) -> Dual Axis
+
+![](img/pcdiff_2.png)
+
+
+3. Change one of the Sum(Export) line graph to circle under Marks shelf. Do this for import graph too. Adjust the circle by clicking size.
+
+![](img/pcdiff_3.png)
+
+4. To make the graph clearer, set a different color for different year for both import and export circle graph by dragging **Date** to color.
+
+![](img/pcdiff_4.png)
+
+5. Percent difference was calculated for each country to see how the merchandise trade changes from 2019 to 2020. The steps to add percent difference are as follow:
+
+* Drag **Export** to line graph SUM(Export) - Label
+![](img/pcdiff_5.png)
+
+* Click the small white arrow in line graph SUM(Export) inside the **Marks Shelf** -> **Quick Table Calculation** -> **Percent Difference**
+![](img/pcdiff_6.png)
+* Click the small white arrow again -> **Calculate Using** -> **Date**
+![](img/pcdiff_7.png)
+
+6. Repeat step 1 to 5 to show the percent difference for import graph
+
+## 4.5 Dashboard
+
+Consolidate all the three worksheets into one dashboard.
+
+1. To create a new dashboard, click the **New Dashboard Tab**
+
+![](img/db1.png)
+
+2. We can adjust the dashboard size, change **Fixed size** to **Automatic** is highly recommended
+
+![](img/db2.png)
+
+3. Drag the worksheets to the canvas, tick **Show dashboard title** if needed
+
+![](img/db3.png)
+
+4. Change the dashboard title by double clicking the title, same as changing the worksheet's title
+5. The final dashboard is ready
