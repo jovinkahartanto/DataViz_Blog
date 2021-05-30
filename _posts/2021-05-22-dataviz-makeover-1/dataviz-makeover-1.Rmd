@@ -17,21 +17,25 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # 1. Introduction
+Nowadays, data visualisation such as graphs and maps can be found anywhere. Data visualisation can help us to understand better what the information means and it will also make it easier to understand the trends, patterns, and outliers within large datasets. However, a poor data visualisation can be misleading or make it even harder to understand the information. 
 
-# 2. Critique of Visualisation 
-To explore different perspective and design more truthful and enlightening data visualisation, we will first observe the original visualisation of the data (Figure 1). The critiques will be divided into two section, clarity and aesthetics.
+This post will makeover the merchandise trade chart below, so that it can be more fruitful for the audience. The data visualisation will be created by using data provided by Department of Statistics, Singapore (DOS). The data are available under the sub-section of [Merchandise Trade by Region/Market](https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data).
 
 ![**Figure 1**](img/original.png)
+
+# 2. Critique of Visualisation 
+To explore different perspective and design more truthful and enlightening data visualisation, we will first observe the original visualisation. The critiques will be divided into two section, clarity and aesthetics.
+
 
 ## 2.1 Clarity
 1. **The title of the graph does not match the visualisation.** The title leads us to expect that the graph will be showing merchandise trade data for period 2019 to 2020, meanwhile the x-axis label for Japan only shows year of 2020 and the period for the rest of the graph starts from 2019 and ends in 2021.
 2. **The period of the data used is inconsistent.** According to the graph, it seems like it covers merchandise trade data from 2019 to 2021 for Hong Kong, Mainland China, Taiwan, US, and Malaysia. However, we can observe that for Japan, it only covers merchandise trade data in 2020.
 3. **The title of X axis is confusing.** The axis title clearly mentions "Month of Period", but the x-axis label display years instead of months. 
-4. There is no lead-in or call-outs to provide context
+4. **There is no lead-in or call-outs to provide context**.
 
 ## 2.2 Aesthetics
-1. **It is difficult to see some data points in the chart**.The graph will be easier to understand if line graph were used.The area graph make some data points harder to read, since some of the data points are overlapped between import and export.
-2. **There is no tick marks for both axis** even though this graph is a continuous scale. The non existence of the graph make it harder to read the graph.
+1. **It is difficult to see some data points in the chart**.The graph will be easier to understand if line graph were used. Area graph make some data points harder to read, since some of the data points are overlapped between import and export.
+2. **There is no tick marks for both axis** even though this graph is a continuous scale. The non existence of the graph make it harder to read the data points.
 3. **The choices of colors can be improved**. More contrast colors might able to make the graph easier to read. 
 4. **The title does not align with the graphs**. The placing of the title is not in the center nor left-aligned. 
 
@@ -39,20 +43,26 @@ To explore different perspective and design more truthful and enlightening data 
 
 The alternative graphical design proposed can be seen below:
 
-![](img/graph_proposal.png) 
+![figure 2](img/graph_proposal.png) 
 
 The proposed design above will improve the original visualisation in terms of:
 
 # Clarity:
-1. Line graph is used for the visualisation and the label of x-axis is changed to month and year. These two combination will make it easier to see the merchandise trade's trend for each country.
+1. Line graph is used for the visualisation and the label of x-axis is changed to month and year instead of only year. These two combination will make it easier to see the merchandise trade's trend for each country.
 
-2. Export and Import were split into two different graph, which make it easier to compare import and export trend among the top six Singapore's merchandise trade partners.
+2. Export and Import is split into two different graph, which make it easier to compare import and export trend among the top six Singapore's merchandise trade partners.
 
-3. Additional charts will be added to paint a clearer picture of how the export and import values changed from 2019 to 2020 for each country. The scatter plot will also show the relationship between of export value and import value for each top trading partners.
+3. Additional charts is added to paint a clearer picture of how the export and import values changed from 2019 to 2020 for each country. The scatter plot will also show the relationship between of export value and import value for each top trading partners.
+
+4. The title match the content of the graph.
+
+5. The period of the data used will be consistent for all countries.
+
 # Aesthetics:
-1. Major tick marks was added in line graph since it is continuous data.Tick marks will make the graph easier to read.
+1. Major tick marks is added for both axis since it is continuous scale.Tick marks will make the graph easier to read.
+2. The color of the charts were chosen to guarantee that most people who are colorblind can distinguish groups of data that are color coded
+3. The title is now aligned with the position of the graph, the chart titles are all left aligned.
 
-Additionally the proposed design will give an overview of the comparison of export and import data between the top six countries and it will also shows which country has higher import than export and vice versa.
 
 # 4. Step-by-Step Guide
 
@@ -62,64 +72,86 @@ Additionally the proposed design will give an overview of the comparison of expo
 
 import data:
 
-![**Figure 2**](img/imp_cl_1.png) 
+![Figure 3](img/imp_cl_1.png) 
+
 Export data:
 
-![**Figure 3**](img/exp_cl_1.png)
+![Figure 4](img/exp_cl_1.png)
+
 
 
 2. Create a new column in the clean data worksheets to store the country name.
 
-![**Figure 4**](img/country.png)
+![Figure 5](img/country.png)
 
-3.    Import the data into tableau and join import and export data by country, the steps are as follows:
+3. Import the data into tableau and join import and export data by country, the steps are as follows:
 
-* Open tableau and select microsoft excel under connect panel and select the file
-![](img/import_data_tableau.png)
+* Open tableau and select microsoft excel under connect panel -> select the file type
+
+![Figure 6](img/import_data_tableau.png)
 * Drag the sheets that need to be imported to the workspace one by one
-![](img/import_data_tableau_1.png)
+
+![Figure 7](img/import_data_tableau_1.png)
+
 * Edit the relationship by typing country in both of the search bars
-![](img/import_data_tableau_2.png)
-* Click "Country1" and Country(T1-Clean(Export)), and the click **close**
-![](img/import_data_tableau_3.png)
-* Hide the unwanted column(s) that is not needed for the data preparation or analysis by clicking the small arrow beside the column name -> hide.
-![](img/import_data_tableau_4.png)
-* Now that the dataset is ready to be used, we can click the new empty sheet and start our visualisation
+
+![Figure 8](img/import_data_tableau_2.png)
+
+* Click **Country1** and **Country(T1-Clean(Export))** -> **close**
+
+![Figure 9](img/import_data_tableau_3.png)
+
+* Hide the unwanted column(s) that is not needed for the data preparation or analysis by clicking the small arrow beside the column name -> hide
+
+![Figure 10](img/import_data_tableau_4.png)
+
+* New worksheet is needed for the next step of data preparation.
+
+![Figure 11](img/import_data_tableau_5.png)
+
 
 4. Create a text table by placing country on the rows shelves and monthly import data in columns and then click text table from show me.
 
-![**Figure 6**](img/imp_cl_2.png)
+![Figure 12](img/imp_cl_2.png)
 
 The text table are shown in the figure below.
 
-![**Figure 7**](img/imp_cl_3.png)
+![Figure 13](img/imp_cl_3.png)
   
 
-5. Pivot the data from crosstab format to columnar format by viewing the data in tableau. Click “Export All” and save it as excel file.
+5. Pivot the data from crosstab format to columnar format by viewing the data in tableau. 
 
-![**Figure 8**](img/view_data_1.png)
+![Figure 14](img/view_data_1.png)
 
-![**Figure 9**](img/view_data_2.png)
+Click **Export All** and save it as excel file.
+
+![Figure 15](img/view_data_2.png)
 
 6. Split the measure names into two columns (year and month) by using excel for both import and export data. 
 
-![**Figure 10**](img/split_date.png)
+![Figure 16](img/split_date.png)
 
 7. To create a date value in excel, convert the month names into number. Create a new column called “Date” in excel according to the year and month in measure name. 
 
-![**Figure 11**](img/split_date_2.png)
-8. Repeat step 4 to 7 for merchandise export data. Merge import, export, and total merchandise trade data in columnar format into one excel file to make it easier for importing the data into tableau.
+![Figure 17](img/split_date_2.png)
 
-![**Figure 12**](img/imp_exp_cln.png)
-9. Import clean merchandise data into tableau and join both dataset by country and date (the step by step guide of importing the data can be seen in step 3).Select the merchandise trade data for top six trading countries that were mentioned in the original graph by using filter function in data source tab.
 
-![**Figure 13**](img/clean_filter.png)
+8. Repeat step 4 to 7 for merchandise export data. Merge columnar format import and export data into one excel file to make it easier when importing the data into tableau.
+
+![Figure 18](img/imp_exp_cln.png)
+
+9. Import clean merchandise data into tableau and join both dataset by country and date (the step by step guide of importing the data can be seen in step 3). Select the merchandise trade data for top six trading countries that were mentioned in the original graph by using filter function in data source tab.
+
+![Figure 19](img/clean_filter.png)
+
 After clicking **add** in filters,click **Add** again in "edit data source filter" window. 
 
-![**Figure 14**](img/clean_filter_3.png)
+![Figure 20](img/clean_filter_3.png)
+
 Select country -> **OK**. Select all the countries that we need for the analysis, by clicking the checkboxes in front of the country.
 
-![**Figure 14**](img/clean_filter_4.png)
+![Figure 21](img/clean_filter_4.png)
+
 After the filter was applied, the top six merchandise trade data is ready to be used for the analysis.
 
 
@@ -127,86 +159,97 @@ After the filter was applied, the top six merchandise trade data is ready to be 
 This visualisation will be using monthly import and export data for each country.
 
 1. Drag export and import data to Rows shelf and drag country into colour.
-![](img/line_vis.png)
-2. click the small arrow in "Year" inside the column shelf, select month that is highlighted in blue.
-![](img/line_vis1.png)
-3. Right Click on X-axis to edit the date range
-![](img/line_vis2.png)
-4. Change the date range, title, and tick marks settings as per below
 
-![](img/line_vis3.png)
+![Figure 22](img/line_vis.png)
 
-![](img/line_vis4.png)
+2. click the small arrow in **Year** inside the column shelf, select month that is highlighted in blue.
+
+![Figure 23](img/line_vis1.png)
+
+3. Right Click on X-axis to edit the date range.
+
+![Figure 24](img/line_vis2.png)
+
+4. Change the date range, title, and tick marks settings as per below.
+
+![Figure 25](img/line_vis3.png)
+
+![Figure 26](img/line_vis4.png)
 
 
-5. Right Click on the X-axis -> Format, to edit the label's and tick marks' font and colour.Change the tick mark colour to black, custom the data format to **mmm yy**, and choose **up** for the alignment.
+5. Right Click on the X-axis -> **Format**, to edit the label's and tick marks' font and color. Since the background color is white, change the tick mark's color to black, so they will be visible. Custom the label format to **mmm yy**, and choose **up** for the alignment.
 
-![](img/line_vis5.png)
+![Figure 27](img/line_vis5.png)
 
 ## 4.3 Net Importers and Net Exporters, 2019 - 2020
 
-This graph is to show which countries are net importer and which are net exporter
+This graph is to show the relationship between import and export data.
 
-1. Drag **Date** and **Export** to column shelf and drag **import** to row shelf
+1. Drag **Date** and **Export** to column shelf and drag **Import** to row shelf
 2. Drag **Country** to Text and Detail, drag **Date** to Color
 
-![](img/imp_exp_grf1.png)
+![Figure 28](img/imp_exp_grf1.png)
 
-3. Hide the legend of the graph, by clicking the small arrow in the legend -> click **Hide Card**
+3. Hide the legend of the graph, by clicking the small arrow in the legend -> **Hide Card**
 
-![](img/imp_exp_grf2.png)
+![Figure 29](img/imp_exp_grf2.png)
 
 
-4. To create the 45 degree line, the steps are as follow:
+4. The steps to create the 45 degree line,  are as follow:
 
-* Drag **Import** to columns shelf -> Click the small arrow -> Dual Axis
+* Drag **Import** to columns shelf -> Click the small arrow -> **Dual Axis**
 
-![](img/imp_exp_grf3.png)
+![Figure 30](img/imp_exp_grf3.png)
 
 * Click **Sum(Import)** in the columns shelf and edit the components under marks shelf
 
-* Remove **Country**(Text - SUM(Import)) from Marks shelf
-![](img/imp_exp_grf5.png)
+* Remove **Country** (Text - SUM(Import)) from Marks shelf
 
-* Click **Color** in SUM(Import), change the opacity to 0%
-![](img/imp_exp_grf4.png)
+![Figure 31](img/imp_exp_grf5.png)
 
-* Right click on the graph -> **Trend Lines** -> **Show Trend Lines** -> SUM(Import)
+* Click **Color** in SUM(Import) -> change the opacity to 0%
 
-![](img/imp_exp_grf6.png)
-* Change the axis range to fixed -> change **Fixed start** and **Fixed end**
+![Figure 32](img/imp_exp_grf4.png)
 
-![](img/imp_exp_grf7.png)
+* Right click on the graph -> **Trend Lines** -> **Show Trend Lines** -> **SUM(Import)**
+
+![Figure 33](img/imp_exp_grf6.png)
+
+* Change the axis range to **Fixed** -> change **Fixed start** and **Fixed end**
+
+![Figure 34](img/imp_exp_grf7.png)
 
 
 * Make sure all these 5 axis have same range
 
-![](img/imp_exp_grf8.png)
+![Figure 35](img/imp_exp_grf8.png)
 
-* Change the format of the 45 degree line by double clicking -> Format
+* Change the format of the 45 degree line by double clicking the line -> **Format**
 
 * Change the format of the trend line to dotted line
 
-![](img/imp_exp_grf9.png)
+![Figure 36](img/imp_exp_grf9.png)
+
 5. Hide the header for the top axis. Right click on the axis -> **Show Header**
 
-![](img/imp_exp_grf10.png)
+![Figure 37](img/imp_exp_grf10.png)
 
 
 6. Hide field labels for columns
 
-![](img/imp_exp_grf11.png)
+![Figure 38](img/imp_exp_grf11.png)
 
-7. Change the color of the graph by choosing color for SUM(Export) in Marks shelf -> choose the data item -> choose the color
+7. Change the color of the graph by choosing **color** for **SUM(Export)** in Marks shelf -> select the data item -> choose the color
 
-![](img/imp_exp_grf12.png)
+![Figure 39](img/imp_exp_grf12.png)
 
 8. Change the title of the graph by double clicking the title -> Change the title -> **Apply** -> **OK**
-![](img/imp_exp_grf13.png)
 
-9. Add the annotation by right clicking the graph -> **Annotate** -> Area
+![Figure 40](img/imp_exp_grf13.png)
 
-![](img/imp_exp_grf14.png)
+9. Add the annotation by right clicking the graph -> **Annotate** -> **Area**
+
+![Figure 41](img/imp_exp_grf14.png)
 
 ## 4.4 Yearly Merchandise Trade Comparison by Country, 2019-2020
 
@@ -214,30 +257,33 @@ The third graph is to find the percentage change of total merchandise trade for 
 
 1. Drag **Country** and **Date** to columns shelf -> Drag **Export** to rows shelf twice
 
-![](img/pcdiff_1.png)
+![Figure 42](img/pcdiff_1.png)
 
-2. Click the small arrow in one of the SUM(Export) -> Dual Axis
+2. Click the small arrow in one of the SUM(Export) -> **Dual Axis**
 
-![](img/pcdiff_2.png)
+![Figure 43](img/pcdiff_2.png)
 
 
 3. Change one of the Sum(Export) line graph to circle under Marks shelf. Do this for import graph too. Adjust the circle by clicking size.
 
-![](img/pcdiff_3.png)
+![Figure 44](img/pcdiff_3.png)
 
 4. To make the graph clearer, set a different color for different year for both import and export circle graph by dragging **Date** to color.
 
-![](img/pcdiff_4.png)
+![Figure 45](img/pcdiff_4.png)
 
 5. Percent difference was calculated for each country to see how the merchandise trade changes from 2019 to 2020. The steps to add percent difference are as follow:
 
 * Drag **Export** to line graph SUM(Export) - Label
-![](img/pcdiff_5.png)
+
+![Figure 46](img/pcdiff_5.png)
 
 * Click the small white arrow in line graph SUM(Export) inside the **Marks Shelf** -> **Quick Table Calculation** -> **Percent Difference**
-![](img/pcdiff_6.png)
+
+![Figure 47](img/pcdiff_6.png)
 * Click the small white arrow again -> **Calculate Using** -> **Date**
-![](img/pcdiff_7.png)
+
+![Figure 48](img/pcdiff_7.png)
 
 6. Repeat step 1 to 5 to show the percent difference for import graph
 
@@ -247,17 +293,18 @@ Consolidate all the three worksheets into one dashboard.
 
 1. To create a new dashboard, click the **New Dashboard Tab**
 
-![](img/db1.png)
+![Figure 49](img/db1.png)
 
 2. We can adjust the dashboard size, change **Fixed size** to **Automatic** is highly recommended
 
-![](img/db2.png)
+![Figure 50](img/db2.png)
 
 3. Drag the worksheets to the canvas, tick **Show dashboard title** if needed
 
-![](img/db3.png)
+![Figure 51](img/db3.png)
 
 4. Change the dashboard title by double clicking the title, same as changing the worksheet's title
+
 5. The final dashboard is ready
 
 # 5.0 Major Obeservations
@@ -274,4 +321,4 @@ In 2019, the main product that Singapore exported to Malaysia is refined petrole
 
 [Malaysia (MYS) and Singapore (SGP) Trade](https://oec.world/en/profile/bilateral-country/mys/partner/sgp)
 
-[Bruce-Lockhart, 2020] (https://www.ft.com/content/193e1ddb-9e61-413f-ab7d-df7a52f30413)
+[Bruce-Lockhart, 2020](https://www.ft.com/content/193e1ddb-9e61-413f-ab7d-df7a52f30413)

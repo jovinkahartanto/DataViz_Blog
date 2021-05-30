@@ -2098,11 +2098,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="d-article">
 <h1 id="introduction">1. Introduction</h1>
-<h1 id="critique-of-visualisation">2. Critique of Visualisation</h1>
-<p>To explore different perspective and design more truthful and enlightening data visualisation, we will first observe the original visualisation of the data (Figure 1). The critiques will be divided into two section, clarity and aesthetics.</p>
+<p>Nowadays, data visualisation such as graphs and maps can be found anywhere. Data visualisation can help us to understand better what the information means and it will also make it easier to understand the trends, patterns, and outliers within large datasets. However, a poor data visualisation can be misleading or make it even harder to understand the information.</p>
+<p>This post will makeover the merchandise trade chart below, so that it can be more fruitful for the audience. The data visualisation will be created by using data provided by Department of Statistics, Singapore (DOS). The data are available under the sub-section of <a href="https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data">Merchandise Trade by Region/Market</a>.</p>
 <figure>
 <img src="img/original.PNG" alt="" /><figcaption><strong>Figure 1</strong></figcaption>
 </figure>
+<h1 id="critique-of-visualisation">2. Critique of Visualisation</h1>
+<p>To explore different perspective and design more truthful and enlightening data visualisation, we will first observe the original visualisation of the data (Figure 1). The critiques will be divided into two section, clarity and aesthetics.</p>
 <h2 id="clarity">2.1 Clarity</h2>
 <ol type="1">
 <li><strong>The title of the graph does not match the visualisation.</strong> The title leads us to expect that the graph will be showing merchandise trade data for period 2019 to 2020, meanwhile the x-axis label for Japan only shows year of 2020 and the period for the rest of the graph starts from 2019 and ends in 2021.</li>
@@ -2125,10 +2127,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <ol type="1">
 <li><p>Line graph is used for the visualisation and the label of x-axis is changed to month and year. These two combination will make it easier to see the merchandise trade’s trend for each country.</p></li>
 <li><p>Export and Import were split into two different graph, which make it easier to compare import and export trend among the top six Singapore’s merchandise trade partners.</p></li>
-<li><p>Additional charts will be added to paint a clearer picture of how the export and import values changed from 2019 to 2020 for each country. The scatter plot will also show the relationship between of export value and import value for each top trading partners. # Aesthetics:</p></li>
-<li><p>Major tick marks was added in line graph since it is continuous data.Tick marks will make the graph easier to read.</p></li>
+<li><p>Additional charts will be added to paint a clearer picture of how the export and import values changed from 2019 to 2020 for each country. The scatter plot will also show the relationship between of export value and import value for each top trading partners.</p></li>
+<li><p>The title and the axis label is now aligned with the content of the graph</p></li>
+<li><p>The period of the data used will be consistentfor all countries</p></li>
 </ol>
-<p>Additionally the proposed design will give an overview of the comparison of export and import data between the top six countries and it will also shows which country has higher import than export and vice versa.</p>
+<h1 id="aesthetics-1">Aesthetics:</h1>
+<ol type="1">
+<li>Major tick marks is added for both axis since it is continuous scale.Tick marks will make the graph easier to read.</li>
+<li>Line graph will make data easier to read</li>
+<li>The color of the charts were chosen to guarantee that most people who are colorblind can distinguish groups of data that are color coded</li>
+</ol>
 <h1 id="step-by-step-guide">4. Step-by-Step Guide</h1>
 <h2 id="data-preparation">4.1 Data Preparation</h2>
 <ol type="1">
