@@ -21,7 +21,7 @@ Nowadays, data visualisation such as graphs and maps can be found anywhere. Data
 
 This post will makeover the merchandise trade chart below, so that it can be more fruitful for the audience. The data visualisation will be created by using data provided by Department of Statistics, Singapore (DOS). The data are available under the sub-section of [Merchandise Trade by Region/Market](https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data).
 
-![**Figure 1**](img/original.png)
+![Figure 1](img/original.png)
 
 # 2. Critique of Visualisation 
 To explore different perspective and design more truthful and enlightening data visualisation, we will first observe the original visualisation. The critiques will be divided into two section, clarity and aesthetics.
@@ -89,6 +89,7 @@ Export data:
 * Open tableau and select microsoft excel under connect panel -> select the file type
 
 ![Figure 6](img/import_data_tableau.png)
+
 * Drag the sheets that need to be imported to the workspace one by one
 
 ![Figure 7](img/import_data_tableau_1.png)
@@ -281,6 +282,7 @@ The third graph is to find the percentage change of total merchandise trade for 
 * Click the small white arrow in line graph SUM(Export) inside the **Marks Shelf** -> **Quick Table Calculation** -> **Percent Difference**
 
 ![Figure 47](img/pcdiff_6.png)
+
 * Click the small white arrow again -> **Calculate Using** -> **Date**
 
 ![Figure 48](img/pcdiff_7.png)
@@ -305,20 +307,26 @@ Consolidate all the three worksheets into one dashboard.
 
 4. Change the dashboard title by double clicking the title, same as changing the worksheet's title
 
-5. The final dashboard is ready
+5. The [final dashboard](https://public.tableau.com/app/profile/jovinka.hartanto3850/viz/Datavizmakeover1-Jovinka/Dashboard2) is ready
 
 # 5.0 Major Obeservations
 
-1. Among the top six Singapore's trading partners, **the number of countries that has value of goods exported by Singapore exceeds the goods imported by them in 2020 is higher compare to 2019**. In 2019, the value of exports exceed imports for Singapore's merchandise trade with Mainland China and Hong Kong. In comparison, in 2020 the value of exports also exceeds imports for the merchandise trade with US. 
+1. Among the top six Singapore's trading partners, the number of countries that has value of goods exported by Singapore exceeds the goods imported by them in 2020 is higher compare to 2019. In 2019, the value of exports exceed imports for Singapore's merchandise trade with Mainland China and Hong Kong. In comparison, in 2020 the value of exports also exceeds imports for the merchandise trade with US. The biggest export destination of Singapore's goods is Mainland China, followed by Hong Kong for both years, 2019 and 2020. However, Hong Kong has extremely high export value compare to its import value, which made Hong Kong the biggest contributor to Singapore's [net exports](https://www.investopedia.com/terms/n/netexports.asp) value.
 
-2. The biggest export destination of Singapore's goods is Mainland China, followed by Hong Kong for both years, 2019 and 2020. However, Hong Kong has extremely high export value compare to its import value, which made Hong Kong the biggest contributor to Singapore [net exports](https://www.investopedia.com/terms/n/netexports.asp) value.
+![Figure 52](img/obs1.png)
 
-3. The import value from United States decreased by by almost 19% in 2020, it can be seen that the value is actually started to decrease at the end of 2019, it decreased even more in mid 2020. 
-
-4. Export values from Singapore to Malaysia decreased by 18.24% in 2020, it can be observed that the value started to decrease in early 2020, this might be due to a lack for demand in petroleum products because of the Covid-19 pandemic.
-
-In 2019, the main product that Singapore exported to Malaysia is refined petroleum and the petroleum products export from Singapore in Apr-Jul 2020 is around 55% lower than Apr-Jul 2019.
+2. The export value for United States increased by almost 20% in 2020, it started to increase at the end of 2019 and the peak is in April and July 2020. On the other hand, export value from Singapore to Malaysia decreased by 18.24% in 2020, it can be observed that the value started to decrease in early 2020, this might be due to a lack for demand in petroleum products because of the Covid-19 pandemic. In 2019, the main product that Singapore exported to Malaysia is refined petroleum and the petroleum products export from Singapore in Apr-Jul 2020 is around 55% lower than Apr-Jul 2019.
 
 [Malaysia (MYS) and Singapore (SGP) Trade](https://oec.world/en/profile/bilateral-country/mys/partner/sgp)
 
 [Bruce-Lockhart, 2020](https://www.ft.com/content/193e1ddb-9e61-413f-ab7d-df7a52f30413)
+
+![Figure 53](img/obs2.png)
+
+![Figure 54](img/obs3.png)
+
+3. Import from Taiwan to Singapore increased by 13.36%, this is expected since Taiwan record historical high exports in 2020. This surged might be because of Taiwan's success in controlling the pandemic, it helped Taiwan get many orders diverted from other source and its semiconductor sector continued to dominate the global market with advanced manufacturing processes. 
+
+![Figure 55](img/obs4.png)
+
+[Focus Taiwan - CNA English News, 2021](https://focustaiwan.tw/business/202101080019)

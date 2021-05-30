@@ -117,7 +117,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/clean_filter.PNG","img/clean_filter_2.PNG","img/clean_filter_3.PNG","img/clean_filter_4.PNG","img/country.png","img/db1.PNG","img/db2.png","img/db3.PNG","img/exp_cl_1.png","img/graph_proposal.png","img/imp_cl_1.png","img/imp_cl_2.png","img/imp_cl_3.png","img/imp_exp_clean_import.png","img/imp_exp_cln.PNG","img/imp_exp_grf1.PNG","img/imp_exp_grf10.PNG","img/imp_exp_grf11.PNG","img/imp_exp_grf12.PNG","img/imp_exp_grf13.PNG","img/imp_exp_grf14.PNG","img/imp_exp_grf2.png","img/imp_exp_grf3.png","img/imp_exp_grf4.png","img/imp_exp_grf5.png","img/imp_exp_grf6.png","img/imp_exp_grf7.PNG","img/imp_exp_grf8.PNG","img/imp_exp_grf9.PNG","img/imp_tableau_1.png","img/import_data_tableau.png","img/import_data_tableau_1.PNG","img/import_data_tableau_2.PNG","img/import_data_tableau_3.png","img/import_data_tableau_4.png","img/line_vis.PNG","img/line_vis1.png","img/line_vis2.PNG","img/line_vis3.PNG","img/line_vis4.PNG","img/line_vis5.PNG","img/original.PNG","img/pcdiff_1.PNG","img/pcdiff_2.png","img/pcdiff_3.png","img/pcdiff_4.png","img/pcdiff_5.png","img/pcdiff_6.png","img/pcdiff_7.png","img/split_date.png","img/split_date_2.png","img/view_data_1.png","img/view_data_2.png"]}
+  {"type":"character","attributes":{},"value":["dataviz-makeover-1_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-1_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-1_files/distill-2.2.21/template.v2.js","dataviz-makeover-1_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-1_files/popper-2.6.0/popper.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-1_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.css","dataviz-makeover-1_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-1_files/webcomponents-2.0.0/webcomponents.js","img/clean_filter.PNG","img/clean_filter_2.PNG","img/clean_filter_3.PNG","img/clean_filter_4.PNG","img/country.png","img/db1.PNG","img/db2.png","img/db3.PNG","img/exp_cl_1.png","img/graph_proposal.png","img/imp_cl_1.png","img/imp_cl_2.png","img/imp_cl_3.png","img/imp_exp_clean_import.png","img/imp_exp_cln.PNG","img/imp_exp_grf1.PNG","img/imp_exp_grf10.PNG","img/imp_exp_grf11.PNG","img/imp_exp_grf12.PNG","img/imp_exp_grf13.PNG","img/imp_exp_grf14.PNG","img/imp_exp_grf2.png","img/imp_exp_grf3.png","img/imp_exp_grf4.png","img/imp_exp_grf5.png","img/imp_exp_grf6.png","img/imp_exp_grf7.PNG","img/imp_exp_grf8.PNG","img/imp_exp_grf9.PNG","img/imp_tableau_1.png","img/import_data_tableau.png","img/import_data_tableau_1.PNG","img/import_data_tableau_2.PNG","img/import_data_tableau_3.png","img/import_data_tableau_4.png","img/import_data_tableau_5.png","img/line_vis.PNG","img/line_vis1.png","img/line_vis2.PNG","img/line_vis3.PNG","img/line_vis4.PNG","img/line_vis5.PNG","img/obs1.PNG","img/obs2.PNG","img/obs3.PNG","img/obs4.PNG","img/original.PNG","img/pcdiff_1.PNG","img/pcdiff_2.png","img/pcdiff_3.png","img/pcdiff_4.png","img/pcdiff_5.png","img/pcdiff_6.png","img/pcdiff_7.png","img/split_date.png","img/split_date_2.png","img/view_data_1.png","img/view_data_2.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2101,41 +2101,43 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>Nowadays, data visualisation such as graphs and maps can be found anywhere. Data visualisation can help us to understand better what the information means and it will also make it easier to understand the trends, patterns, and outliers within large datasets. However, a poor data visualisation can be misleading or make it even harder to understand the information.</p>
 <p>This post will makeover the merchandise trade chart below, so that it can be more fruitful for the audience. The data visualisation will be created by using data provided by Department of Statistics, Singapore (DOS). The data are available under the sub-section of <a href="https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data">Merchandise Trade by Region/Market</a>.</p>
 <figure>
-<img src="img/original.PNG" alt="" /><figcaption><strong>Figure 1</strong></figcaption>
+<img src="img/original.PNG" alt="" /><figcaption>Figure 1</figcaption>
 </figure>
 <h1 id="critique-of-visualisation">2. Critique of Visualisation</h1>
-<p>To explore different perspective and design more truthful and enlightening data visualisation, we will first observe the original visualisation of the data (Figure 1). The critiques will be divided into two section, clarity and aesthetics.</p>
+<p>To explore different perspective and design more truthful and enlightening data visualisation, we will first observe the original visualisation. The critiques will be divided into two section, clarity and aesthetics.</p>
 <h2 id="clarity">2.1 Clarity</h2>
 <ol type="1">
 <li><strong>The title of the graph does not match the visualisation.</strong> The title leads us to expect that the graph will be showing merchandise trade data for period 2019 to 2020, meanwhile the x-axis label for Japan only shows year of 2020 and the period for the rest of the graph starts from 2019 and ends in 2021.</li>
 <li><strong>The period of the data used is inconsistent.</strong> According to the graph, it seems like it covers merchandise trade data from 2019 to 2021 for Hong Kong, Mainland China, Taiwan, US, and Malaysia. However, we can observe that for Japan, it only covers merchandise trade data in 2020.</li>
 <li><strong>The title of X axis is confusing.</strong> The axis title clearly mentions “Month of Period”, but the x-axis label display years instead of months.</li>
-<li>There is no lead-in or call-outs to provide context</li>
+<li><strong>There is no lead-in or call-outs to provide context</strong>.</li>
 </ol>
 <h2 id="aesthetics">2.2 Aesthetics</h2>
 <ol type="1">
-<li><strong>It is difficult to see some data points in the chart</strong>.The graph will be easier to understand if line graph were used.The area graph make some data points harder to read, since some of the data points are overlapped between import and export.</li>
-<li><strong>There is no tick marks for both axis</strong> even though this graph is a continuous scale. The non existence of the graph make it harder to read the graph.</li>
+<li><strong>It is difficult to see some data points in the chart</strong>.The graph will be easier to understand if line graph were used. Area graph make some data points harder to read, since some of the data points are overlapped between import and export.</li>
+<li><strong>There is no tick marks for both axis</strong> even though this graph is a continuous scale. The non existence of the graph make it harder to read the data points.</li>
 <li><strong>The choices of colors can be improved</strong>. More contrast colors might able to make the graph easier to read.</li>
 <li><strong>The title does not align with the graphs</strong>. The placing of the title is not in the center nor left-aligned.</li>
 </ol>
 <h1 id="alternative-design">3. Alternative Design</h1>
 <p>The alternative graphical design proposed can be seen below:</p>
-<p><img src="img/graph_proposal.png" /></p>
+<figure>
+<img src="img/graph_proposal.png" alt="" /><figcaption>figure 2</figcaption>
+</figure>
 <p>The proposed design above will improve the original visualisation in terms of:</p>
 <h1 id="clarity-1">Clarity:</h1>
 <ol type="1">
-<li><p>Line graph is used for the visualisation and the label of x-axis is changed to month and year. These two combination will make it easier to see the merchandise trade’s trend for each country.</p></li>
-<li><p>Export and Import were split into two different graph, which make it easier to compare import and export trend among the top six Singapore’s merchandise trade partners.</p></li>
-<li><p>Additional charts will be added to paint a clearer picture of how the export and import values changed from 2019 to 2020 for each country. The scatter plot will also show the relationship between of export value and import value for each top trading partners.</p></li>
-<li><p>The title and the axis label is now aligned with the content of the graph</p></li>
-<li><p>The period of the data used will be consistentfor all countries</p></li>
+<li><p>Line graph is used for the visualisation and the label of x-axis is changed to month and year instead of only year. These two combination will make it easier to see the merchandise trade’s trend for each country.</p></li>
+<li><p>Export and Import is split into two different graph, which make it easier to compare import and export trend among the top six Singapore’s merchandise trade partners.</p></li>
+<li><p>Additional charts is added to paint a clearer picture of how the export and import values changed from 2019 to 2020 for each country. The scatter plot will also show the relationship between of export value and import value for each top trading partners.</p></li>
+<li><p>The title match the content of the graph.</p></li>
+<li><p>The period of the data used will be consistent for all countries.</p></li>
 </ol>
 <h1 id="aesthetics-1">Aesthetics:</h1>
 <ol type="1">
 <li>Major tick marks is added for both axis since it is continuous scale.Tick marks will make the graph easier to read.</li>
-<li>Line graph will make data easier to read</li>
 <li>The color of the charts were chosen to guarantee that most people who are colorblind can distinguish groups of data that are color coded</li>
+<li>The title is now aligned with the position of the graph, the chart titles are all left aligned.</li>
 </ol>
 <h1 id="step-by-step-guide">4. Step-by-Step Guide</h1>
 <h2 id="data-preparation">4.1 Data Preparation</h2>
@@ -2143,149 +2145,285 @@ document.addEventListener('DOMContentLoaded', function() {
 <li>Clean the raw data by selecting all countries’ merchandise trade data for the year 2019 to 2020. Copy the table from the raw dataset and paste it into the first row of the new created worksheet by using excel workbook. Clean import and export data are stored in two different worksheets.</li>
 </ol>
 <p>import data:</p>
-<p><img src="img/imp_cl_1.png" alt="Figure 2" /> Export data:</p>
 <figure>
-<img src="img/exp_cl_1.png" alt="" /><figcaption><strong>Figure 3</strong></figcaption>
+<img src="img/imp_cl_1.png" alt="" /><figcaption>Figure 3</figcaption>
+</figure>
+<p>Export data:</p>
+<figure>
+<img src="img/exp_cl_1.png" alt="" /><figcaption>Figure 4</figcaption>
 </figure>
 <ol start="2" type="1">
 <li>Create a new column in the clean data worksheets to store the country name.</li>
 </ol>
 <figure>
-<img src="img/country.png" alt="" /><figcaption><strong>Figure 4</strong></figcaption>
+<img src="img/country.png" alt="" /><figcaption>Figure 5</figcaption>
 </figure>
 <ol start="3" type="1">
 <li>Import the data into tableau and join import and export data by country, the steps are as follows:</li>
 </ol>
 <ul>
-<li>Open tableau and select microsoft excel under connect panel and select the file <img src="img/import_data_tableau.png" /></li>
-<li>Drag the sheets that need to be imported to the workspace one by one <img src="img/import_data_tableau_1.PNG" /></li>
-<li>Edit the relationship by typing country in both of the search bars <img src="img/import_data_tableau_2.PNG" /></li>
-<li>Click “Country1” and Country(T1-Clean(Export)), and the click <strong>close</strong> <img src="img/import_data_tableau_3.png" /></li>
-<li>Hide the unwanted column(s) that is not needed for the data preparation or analysis by clicking the small arrow beside the column name -&gt; hide. <img src="img/import_data_tableau_4.png" /></li>
-<li>Now that the dataset is ready to be used, we can click the new empty sheet and start our visualisation</li>
+<li>Open tableau and select microsoft excel under connect panel -&gt; select the file type</li>
 </ul>
+<figure>
+<img src="img/import_data_tableau.png" alt="" /><figcaption>Figure 6</figcaption>
+</figure>
+<ul>
+<li>Drag the sheets that need to be imported to the workspace one by one</li>
+</ul>
+<figure>
+<img src="img/import_data_tableau_1.PNG" alt="" /><figcaption>Figure 7</figcaption>
+</figure>
+<ul>
+<li>Edit the relationship by typing country in both of the search bars</li>
+</ul>
+<figure>
+<img src="img/import_data_tableau_2.PNG" alt="" /><figcaption>Figure 8</figcaption>
+</figure>
+<ul>
+<li>Click <strong>Country1</strong> and <strong>Country(T1-Clean(Export))</strong> -&gt; <strong>close</strong></li>
+</ul>
+<figure>
+<img src="img/import_data_tableau_3.png" alt="" /><figcaption>Figure 9</figcaption>
+</figure>
+<ul>
+<li>Hide the unwanted column(s) that is not needed for the data preparation or analysis by clicking the small arrow beside the column name -&gt; hide</li>
+</ul>
+<figure>
+<img src="img/import_data_tableau_4.png" alt="" /><figcaption>Figure 10</figcaption>
+</figure>
+<ul>
+<li>New worksheet is needed for the next step of data preparation.</li>
+</ul>
+<figure>
+<img src="img/import_data_tableau_5.png" alt="" /><figcaption>Figure 11</figcaption>
+</figure>
 <ol start="4" type="1">
 <li>Create a text table by placing country on the rows shelves and monthly import data in columns and then click text table from show me.</li>
 </ol>
 <figure>
-<img src="img/imp_cl_2.png" alt="" /><figcaption><strong>Figure 6</strong></figcaption>
+<img src="img/imp_cl_2.png" alt="" /><figcaption>Figure 12</figcaption>
 </figure>
 <p>The text table are shown in the figure below.</p>
 <figure>
-<img src="img/imp_cl_3.png" alt="" /><figcaption><strong>Figure 7</strong></figcaption>
+<img src="img/imp_cl_3.png" alt="" /><figcaption>Figure 13</figcaption>
 </figure>
 <ol start="5" type="1">
-<li>Pivot the data from crosstab format to columnar format by viewing the data in tableau. Click “Export All” and save it as excel file.</li>
+<li>Pivot the data from crosstab format to columnar format by viewing the data in tableau.</li>
 </ol>
 <figure>
-<img src="img/view_data_1.png" alt="" /><figcaption><strong>Figure 8</strong></figcaption>
+<img src="img/view_data_1.png" alt="" /><figcaption>Figure 14</figcaption>
 </figure>
+<p>Click <strong>Export All</strong> and save it as excel file.</p>
 <figure>
-<img src="img/view_data_2.png" alt="" /><figcaption><strong>Figure 9</strong></figcaption>
+<img src="img/view_data_2.png" alt="" /><figcaption>Figure 15</figcaption>
 </figure>
 <ol start="6" type="1">
 <li>Split the measure names into two columns (year and month) by using excel for both import and export data.</li>
 </ol>
 <figure>
-<img src="img/split_date.png" alt="" /><figcaption><strong>Figure 10</strong></figcaption>
+<img src="img/split_date.png" alt="" /><figcaption>Figure 16</figcaption>
 </figure>
 <ol start="7" type="1">
 <li>To create a date value in excel, convert the month names into number. Create a new column called “Date” in excel according to the year and month in measure name.</li>
 </ol>
-<p><img src="img/split_date_2.png" alt="Figure 11" /> 8. Repeat step 4 to 7 for merchandise export data. Merge import, export, and total merchandise trade data in columnar format into one excel file to make it easier for importing the data into tableau.</p>
-<p><img src="img/imp_exp_cln.PNG" alt="Figure 12" /> 9. Import clean merchandise data into tableau and join both dataset by country and date (the step by step guide of importing the data can be seen in step 3).Select the merchandise trade data for top six trading countries that were mentioned in the original graph by using filter function in data source tab.</p>
-<p><img src="img/clean_filter.PNG" alt="Figure 13" /> After clicking <strong>add</strong> in filters,click <strong>Add</strong> again in “edit data source filter” window.</p>
-<p><img src="img/clean_filter_3.PNG" alt="Figure 14" /> Select country -&gt; <strong>OK</strong>. Select all the countries that we need for the analysis, by clicking the checkboxes in front of the country.</p>
-<p><img src="img/clean_filter_4.PNG" alt="Figure 14" /> After the filter was applied, the top six merchandise trade data is ready to be used for the analysis.</p>
+<figure>
+<img src="img/split_date_2.png" alt="" /><figcaption>Figure 17</figcaption>
+</figure>
+<ol start="8" type="1">
+<li>Repeat step 4 to 7 for merchandise export data. Merge columnar format import and export data into one excel file to make it easier when importing the data into tableau.</li>
+</ol>
+<figure>
+<img src="img/imp_exp_cln.PNG" alt="" /><figcaption>Figure 18</figcaption>
+</figure>
+<ol start="9" type="1">
+<li>Import clean merchandise data into tableau and join both dataset by country and date (the step by step guide of importing the data can be seen in step 3). Select the merchandise trade data for top six trading countries that were mentioned in the original graph by using filter function in data source tab.</li>
+</ol>
+<figure>
+<img src="img/clean_filter.PNG" alt="" /><figcaption>Figure 19</figcaption>
+</figure>
+<p>After clicking <strong>add</strong> in filters,click <strong>Add</strong> again in “edit data source filter” window.</p>
+<figure>
+<img src="img/clean_filter_3.PNG" alt="" /><figcaption>Figure 20</figcaption>
+</figure>
+<p>Select country -&gt; <strong>OK</strong>. Select all the countries that we need for the analysis, by clicking the checkboxes in front of the country.</p>
+<figure>
+<img src="img/clean_filter_4.PNG" alt="" /><figcaption>Figure 21</figcaption>
+</figure>
+<p>After the filter was applied, the top six merchandise trade data is ready to be used for the analysis.</p>
 <h2 id="monthly-merchandise-trade-performance-2019--2020">4.2 Monthly Merchandise Trade Performance, 2019 -2020</h2>
 <p>This visualisation will be using monthly import and export data for each country.</p>
 <ol type="1">
-<li>Drag export and import data to Rows shelf and drag country into colour. <img src="img/line_vis.PNG" /></li>
-<li>click the small arrow in “Year” inside the column shelf, select month that is highlighted in blue. <img src="img/line_vis1.png" /></li>
-<li>Right Click on X-axis to edit the date range <img src="img/line_vis2.PNG" /></li>
-<li>Change the date range, title, and tick marks settings as per below</li>
+<li>Drag export and import data to Rows shelf and drag country into colour.</li>
 </ol>
-<p><img src="img/line_vis3.PNG" /></p>
-<p><img src="img/line_vis4.PNG" /></p>
+<figure>
+<img src="img/line_vis.PNG" alt="" /><figcaption>Figure 22</figcaption>
+</figure>
+<ol start="2" type="1">
+<li>click the small arrow in <strong>Year</strong> inside the column shelf, select month that is highlighted in blue.</li>
+</ol>
+<figure>
+<img src="img/line_vis1.png" alt="" /><figcaption>Figure 23</figcaption>
+</figure>
+<ol start="3" type="1">
+<li>Right Click on X-axis to edit the date range.</li>
+</ol>
+<figure>
+<img src="img/line_vis2.PNG" alt="" /><figcaption>Figure 24</figcaption>
+</figure>
+<ol start="4" type="1">
+<li>Change the date range, title, and tick marks settings as per below.</li>
+</ol>
+<figure>
+<img src="img/line_vis3.PNG" alt="" /><figcaption>Figure 25</figcaption>
+</figure>
+<figure>
+<img src="img/line_vis4.PNG" alt="" /><figcaption>Figure 26</figcaption>
+</figure>
 <ol start="5" type="1">
-<li>Right Click on the X-axis -&gt; Format, to edit the label’s and tick marks’ font and colour.Change the tick mark colour to black, custom the data format to <strong>mmm yy</strong>, and choose <strong>up</strong> for the alignment.</li>
+<li>Right Click on the X-axis -&gt; <strong>Format</strong>, to edit the label’s and tick marks’ font and color. Since the background color is white, change the tick mark’s color to black, so they will be visible. Custom the label format to <strong>mmm yy</strong>, and choose <strong>up</strong> for the alignment.</li>
 </ol>
-<p><img src="img/line_vis5.PNG" /></p>
+<figure>
+<img src="img/line_vis5.PNG" alt="" /><figcaption>Figure 27</figcaption>
+</figure>
 <h2 id="net-importers-and-net-exporters-2019---2020">4.3 Net Importers and Net Exporters, 2019 - 2020</h2>
-<p>This graph is to show which countries are net importer and which are net exporter</p>
+<p>This graph is to show the relationship between import and export data.</p>
 <ol type="1">
-<li>Drag <strong>Date</strong> and <strong>Export</strong> to column shelf and drag <strong>import</strong> to row shelf</li>
+<li>Drag <strong>Date</strong> and <strong>Export</strong> to column shelf and drag <strong>Import</strong> to row shelf</li>
 <li>Drag <strong>Country</strong> to Text and Detail, drag <strong>Date</strong> to Color</li>
 </ol>
-<p><img src="img/imp_exp_grf1.PNG" /></p>
+<figure>
+<img src="img/imp_exp_grf1.PNG" alt="" /><figcaption>Figure 28</figcaption>
+</figure>
 <ol start="3" type="1">
-<li>Hide the legend of the graph, by clicking the small arrow in the legend -&gt; click <strong>Hide Card</strong></li>
+<li>Hide the legend of the graph, by clicking the small arrow in the legend -&gt; <strong>Hide Card</strong></li>
 </ol>
-<p><img src="img/imp_exp_grf2.png" /></p>
+<figure>
+<img src="img/imp_exp_grf2.png" alt="" /><figcaption>Figure 29</figcaption>
+</figure>
 <ol start="4" type="1">
-<li>To create the 45 degree line, the steps are as follow:</li>
+<li>The steps to create the 45 degree line, are as follow:</li>
 </ol>
 <ul>
-<li>Drag <strong>Import</strong> to columns shelf -&gt; Click the small arrow -&gt; Dual Axis</li>
+<li>Drag <strong>Import</strong> to columns shelf -&gt; Click the small arrow -&gt; <strong>Dual Axis</strong></li>
 </ul>
-<p><img src="img/imp_exp_grf3.png" /></p>
+<figure>
+<img src="img/imp_exp_grf3.png" alt="" /><figcaption>Figure 30</figcaption>
+</figure>
 <ul>
 <li><p>Click <strong>Sum(Import)</strong> in the columns shelf and edit the components under marks shelf</p></li>
-<li><p>Remove <strong>Country</strong>(Text - SUM(Import)) from Marks shelf <img src="img/imp_exp_grf5.png" /></p></li>
-<li><p>Click <strong>Color</strong> in SUM(Import), change the opacity to 0% <img src="img/imp_exp_grf4.png" /></p></li>
-<li><p>Right click on the graph -&gt; <strong>Trend Lines</strong> -&gt; <strong>Show Trend Lines</strong> -&gt; SUM(Import)</p></li>
+<li><p>Remove <strong>Country</strong> (Text - SUM(Import)) from Marks shelf</p></li>
 </ul>
-<p><img src="img/imp_exp_grf6.png" /> * Change the axis range to fixed -&gt; change <strong>Fixed start</strong> and <strong>Fixed end</strong></p>
-<p><img src="img/imp_exp_grf7.PNG" /></p>
+<figure>
+<img src="img/imp_exp_grf5.png" alt="" /><figcaption>Figure 31</figcaption>
+</figure>
+<ul>
+<li>Click <strong>Color</strong> in SUM(Import) -&gt; change the opacity to 0%</li>
+</ul>
+<figure>
+<img src="img/imp_exp_grf4.png" alt="" /><figcaption>Figure 32</figcaption>
+</figure>
+<ul>
+<li>Right click on the graph -&gt; <strong>Trend Lines</strong> -&gt; <strong>Show Trend Lines</strong> -&gt; <strong>SUM(Import)</strong></li>
+</ul>
+<figure>
+<img src="img/imp_exp_grf6.png" alt="" /><figcaption>Figure 33</figcaption>
+</figure>
+<ul>
+<li>Change the axis range to <strong>Fixed</strong> -&gt; change <strong>Fixed start</strong> and <strong>Fixed end</strong></li>
+</ul>
+<figure>
+<img src="img/imp_exp_grf7.PNG" alt="" /><figcaption>Figure 34</figcaption>
+</figure>
 <ul>
 <li>Make sure all these 5 axis have same range</li>
 </ul>
-<p><img src="img/imp_exp_grf8.PNG" /></p>
+<figure>
+<img src="img/imp_exp_grf8.PNG" alt="" /><figcaption>Figure 35</figcaption>
+</figure>
 <ul>
-<li><p>Change the format of the 45 degree line by double clicking -&gt; Format</p></li>
+<li><p>Change the format of the 45 degree line by double clicking the line -&gt; <strong>Format</strong></p></li>
 <li><p>Change the format of the trend line to dotted line</p></li>
 </ul>
-<p><img src="img/imp_exp_grf9.PNG" /> 5. Hide the header for the top axis. Right click on the axis -&gt; <strong>Show Header</strong></p>
-<p><img src="img/imp_exp_grf10.PNG" /></p>
+<figure>
+<img src="img/imp_exp_grf9.PNG" alt="" /><figcaption>Figure 36</figcaption>
+</figure>
+<ol start="5" type="1">
+<li>Hide the header for the top axis. Right click on the axis -&gt; <strong>Show Header</strong></li>
+</ol>
+<figure>
+<img src="img/imp_exp_grf10.PNG" alt="" /><figcaption>Figure 37</figcaption>
+</figure>
 <ol start="6" type="1">
 <li>Hide field labels for columns</li>
 </ol>
-<p><img src="img/imp_exp_grf11.PNG" /></p>
+<figure>
+<img src="img/imp_exp_grf11.PNG" alt="" /><figcaption>Figure 38</figcaption>
+</figure>
 <ol start="7" type="1">
-<li>Change the color of the graph by choosing color for SUM(Export) in Marks shelf -&gt; choose the data item -&gt; choose the color</li>
+<li>Change the color of the graph by choosing <strong>color</strong> for <strong>SUM(Export)</strong> in Marks shelf -&gt; select the data item -&gt; choose the color</li>
 </ol>
-<p><img src="img/imp_exp_grf12.PNG" /></p>
+<figure>
+<img src="img/imp_exp_grf12.PNG" alt="" /><figcaption>Figure 39</figcaption>
+</figure>
 <ol start="8" type="1">
-<li><p>Change the title of the graph by double clicking the title -&gt; Change the title -&gt; <strong>Apply</strong> -&gt; <strong>OK</strong> <img src="img/imp_exp_grf13.PNG" /></p></li>
-<li><p>Add the annotation by right clicking the graph -&gt; <strong>Annotate</strong> -&gt; Area</p></li>
+<li>Change the title of the graph by double clicking the title -&gt; Change the title -&gt; <strong>Apply</strong> -&gt; <strong>OK</strong></li>
 </ol>
-<p><img src="img/imp_exp_grf14.PNG" /></p>
+<figure>
+<img src="img/imp_exp_grf13.PNG" alt="" /><figcaption>Figure 40</figcaption>
+</figure>
+<ol start="9" type="1">
+<li>Add the annotation by right clicking the graph -&gt; <strong>Annotate</strong> -&gt; <strong>Area</strong></li>
+</ol>
+<figure>
+<img src="img/imp_exp_grf14.PNG" alt="" /><figcaption>Figure 41</figcaption>
+</figure>
 <h2 id="yearly-merchandise-trade-comparison-by-country-2019-2020">4.4 Yearly Merchandise Trade Comparison by Country, 2019-2020</h2>
 <p>The third graph is to find the percentage change of total merchandise trade for each country for the year 2019 to 2020.</p>
 <ol type="1">
 <li>Drag <strong>Country</strong> and <strong>Date</strong> to columns shelf -&gt; Drag <strong>Export</strong> to rows shelf twice</li>
 </ol>
-<p><img src="img/pcdiff_1.PNG" /></p>
+<figure>
+<img src="img/pcdiff_1.PNG" alt="" /><figcaption>Figure 42</figcaption>
+</figure>
 <ol start="2" type="1">
-<li>Click the small arrow in one of the SUM(Export) -&gt; Dual Axis</li>
+<li>Click the small arrow in one of the SUM(Export) -&gt; <strong>Dual Axis</strong></li>
 </ol>
-<p><img src="img/pcdiff_2.png" /></p>
+<figure>
+<img src="img/pcdiff_2.png" alt="" /><figcaption>Figure 43</figcaption>
+</figure>
 <ol start="3" type="1">
 <li>Change one of the Sum(Export) line graph to circle under Marks shelf. Do this for import graph too. Adjust the circle by clicking size.</li>
 </ol>
-<p><img src="img/pcdiff_3.png" /></p>
+<figure>
+<img src="img/pcdiff_3.png" alt="" /><figcaption>Figure 44</figcaption>
+</figure>
 <ol start="4" type="1">
 <li>To make the graph clearer, set a different color for different year for both import and export circle graph by dragging <strong>Date</strong> to color.</li>
 </ol>
-<p><img src="img/pcdiff_4.png" /></p>
+<figure>
+<img src="img/pcdiff_4.png" alt="" /><figcaption>Figure 45</figcaption>
+</figure>
 <ol start="5" type="1">
 <li>Percent difference was calculated for each country to see how the merchandise trade changes from 2019 to 2020. The steps to add percent difference are as follow:</li>
 </ol>
 <ul>
-<li><p>Drag <strong>Export</strong> to line graph SUM(Export) - Label <img src="img/pcdiff_5.png" /></p></li>
-<li><p>Click the small white arrow in line graph SUM(Export) inside the <strong>Marks Shelf</strong> -&gt; <strong>Quick Table Calculation</strong> -&gt; <strong>Percent Difference</strong> <img src="img/pcdiff_6.png" /></p></li>
-<li><p>Click the small white arrow again -&gt; <strong>Calculate Using</strong> -&gt; <strong>Date</strong> <img src="img/pcdiff_7.png" /></p></li>
+<li>Drag <strong>Export</strong> to line graph SUM(Export) - Label</li>
 </ul>
+<figure>
+<img src="img/pcdiff_5.png" alt="" /><figcaption>Figure 46</figcaption>
+</figure>
+<ul>
+<li>Click the small white arrow in line graph SUM(Export) inside the <strong>Marks Shelf</strong> -&gt; <strong>Quick Table Calculation</strong> -&gt; <strong>Percent Difference</strong></li>
+</ul>
+<figure>
+<img src="img/pcdiff_6.png" alt="" /><figcaption>Figure 47</figcaption>
+</figure>
+<ul>
+<li>Click the small white arrow again -&gt; <strong>Calculate Using</strong> -&gt; <strong>Date</strong></li>
+</ul>
+<figure>
+<img src="img/pcdiff_7.png" alt="" /><figcaption>Figure 48</figcaption>
+</figure>
 <ol start="6" type="1">
 <li>Repeat step 1 to 5 to show the percent difference for import graph</li>
 </ol>
@@ -2294,29 +2432,50 @@ document.addEventListener('DOMContentLoaded', function() {
 <ol type="1">
 <li>To create a new dashboard, click the <strong>New Dashboard Tab</strong></li>
 </ol>
-<p><img src="img/db1.PNG" /></p>
+<figure>
+<img src="img/db1.PNG" alt="" /><figcaption>Figure 49</figcaption>
+</figure>
 <ol start="2" type="1">
 <li>We can adjust the dashboard size, change <strong>Fixed size</strong> to <strong>Automatic</strong> is highly recommended</li>
 </ol>
-<p><img src="img/db2.png" /></p>
+<figure>
+<img src="img/db2.png" alt="" /><figcaption>Figure 50</figcaption>
+</figure>
 <ol start="3" type="1">
 <li>Drag the worksheets to the canvas, tick <strong>Show dashboard title</strong> if needed</li>
 </ol>
-<p><img src="img/db3.PNG" /></p>
+<figure>
+<img src="img/db3.PNG" alt="" /><figcaption>Figure 51</figcaption>
+</figure>
 <ol start="4" type="1">
-<li>Change the dashboard title by double clicking the title, same as changing the worksheet’s title</li>
-<li>The final dashboard is ready</li>
+<li><p>Change the dashboard title by double clicking the title, same as changing the worksheet’s title</p></li>
+<li><p>The <a href="https://public.tableau.com/app/profile/jovinka.hartanto3850/viz/Datavizmakeover1-Jovinka/Dashboard2">final dashboard</a> is ready</p></li>
 </ol>
 <h1 id="major-obeservations">5.0 Major Obeservations</h1>
 <ol type="1">
-<li><p>Among the top six Singapore’s trading partners, <strong>the number of countries that has value of goods exported by Singapore exceeds the goods imported by them in 2020 is higher compare to 2019</strong>. In 2019, the value of exports exceed imports for Singapore’s merchandise trade with Mainland China and Hong Kong. In comparison, in 2020 the value of exports also exceeds imports for the merchandise trade with US.</p></li>
-<li><p>The biggest export destination of Singapore’s goods is Mainland China, followed by Hong Kong for both years, 2019 and 2020. However, Hong Kong has extremely high export value compare to its import value, which made Hong Kong the biggest contributor to Singapore <a href="https://www.investopedia.com/terms/n/netexports.asp">net exports</a> value.</p></li>
-<li><p>The import value from United States decreased by by almost 19% in 2020, it can be seen that the value is actually started to decrease at the end of 2019, it decreased even more in mid 2020.</p></li>
-<li><p>Export values from Singapore to Malaysia decreased by 18.24% in 2020, it can be observed that the value started to decrease in early 2020, this might be due to a lack for demand in petroleum products because of the Covid-19 pandemic.</p></li>
+<li>Among the top six Singapore’s trading partners, the number of countries that has value of goods exported by Singapore exceeds the goods imported by them in 2020 is higher compare to 2019. In 2019, the value of exports exceed imports for Singapore’s merchandise trade with Mainland China and Hong Kong. In comparison, in 2020 the value of exports also exceeds imports for the merchandise trade with US. The biggest export destination of Singapore’s goods is Mainland China, followed by Hong Kong for both years, 2019 and 2020. However, Hong Kong has extremely high export value compare to its import value, which made Hong Kong the biggest contributor to Singapore’s <a href="https://www.investopedia.com/terms/n/netexports.asp">net exports</a> value.</li>
 </ol>
-<p>In 2019, the main product that Singapore exported to Malaysia is refined petroleum and the petroleum products export from Singapore in Apr-Jul 2020 is around 55% lower than Apr-Jul 2019.</p>
+<figure>
+<img src="img/obs1.PNG" alt="" /><figcaption>Figure 52</figcaption>
+</figure>
+<ol start="2" type="1">
+<li>The export value for United States increased by almost 20% in 2020, it started to increase at the end of 2019 and the peak is in April and July 2020. On the other hand, export value from Singapore to Malaysia decreased by 18.24% in 2020, it can be observed that the value started to decrease in early 2020, this might be due to a lack for demand in petroleum products because of the Covid-19 pandemic. In 2019, the main product that Singapore exported to Malaysia is refined petroleum and the petroleum products export from Singapore in Apr-Jul 2020 is around 55% lower than Apr-Jul 2019.</li>
+</ol>
 <p><a href="https://oec.world/en/profile/bilateral-country/mys/partner/sgp">Malaysia (MYS) and Singapore (SGP) Trade</a></p>
-<p>[Bruce-Lockhart, 2020] (<a href="https://www.ft.com/content/193e1ddb-9e61-413f-ab7d-df7a52f30413" class="uri">https://www.ft.com/content/193e1ddb-9e61-413f-ab7d-df7a52f30413</a>)</p>
+<p><a href="https://www.ft.com/content/193e1ddb-9e61-413f-ab7d-df7a52f30413">Bruce-Lockhart, 2020</a></p>
+<figure>
+<img src="img/obs2.PNG" alt="" /><figcaption>Figure 53</figcaption>
+</figure>
+<figure>
+<img src="img/obs3.PNG" alt="" /><figcaption>Figure 54</figcaption>
+</figure>
+<ol start="3" type="1">
+<li>Import from Taiwan to Singapore increased by 13.36%, this is expected since Taiwan record historical high exports in 2020. This surged might be because of Taiwan’s success in controlling the pandemic, it helped Taiwan get many orders diverted from other source and its semiconductor sector continued to dominate the global market with advanced manufacturing processes.</li>
+</ol>
+<figure>
+<img src="img/obs4.PNG" alt="" /><figcaption>Figure 55</figcaption>
+</figure>
+<p><a href="https://focustaiwan.tw/business/202101080019">Focus Taiwan - CNA English News, 2021</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
