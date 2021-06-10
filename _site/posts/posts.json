@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-06-10-dataviz-makeover-2/",
+    "title": "dataviz-makeover-2",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Jovinka Hartanto",
+        "url": "https://www.linkedin.com/in/jovinkahartanto/"
+      }
+    ],
+    "date": "2021-06-10",
+    "categories": [],
+    "contents": "\r\n1. Introduction\r\nNowadays, data visualisation such as graphs and maps can be found anywhere. Data visualisation can help us to understand better what the information means and it will also make it easier to understand the trends, patterns, and outliers within large datasets. However, a poor data visualisation can be misleading or make it even harder to understand the information.\r\nThis post will makeover the chart below, so that it can be more fruitful for the audience. The data visualisation will be created by using data provided by Department of Statistics, Singapore (DOS). The data are available under the sub-section of Merchandise Trade by Region/Market.\r\n2. Critique of Visualisation\r\nTo explore different perspective and design more truthful and enlightening data visualisation, we will first observe the original visualisation. The critiques will be divided into two section, clarity and aesthetics.\r\n2.1 Clarity\r\n2.2 Aesthetics\r\n3. Alternative Design\r\nClarity:\r\nAesthetics:\r\n4. Step-by-Step Guide\r\n4.1 Data Preparation\r\nRemove the data that is outside the study period. The study period for this study is between January 2011 to December 2020.\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-06-10T20:58:54+08:00",
+    "input_file": "dataviz-makeover-2.knit.md"
+  },
+  {
     "path": "posts/2021-05-22-dataviz-makeover-1/",
     "title": "DataViz Makeover 1 - Merchandise trade",
     "description": "DataViz Makeover 1 for ISSS608: Visual Analytics",
