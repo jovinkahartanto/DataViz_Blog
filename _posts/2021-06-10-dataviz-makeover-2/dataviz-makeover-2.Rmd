@@ -1,5 +1,5 @@
 ---
-title: "DataViz Makeover 1 - Merchandise trade"
+title: "DataViz Makeover 2 - Merchandise trade"
 description: |
   DataViz Makeover 2 for ISSS608: Visual Analytics
 author:
