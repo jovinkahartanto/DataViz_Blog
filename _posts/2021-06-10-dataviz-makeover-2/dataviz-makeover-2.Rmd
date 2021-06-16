@@ -89,4 +89,37 @@ If you did it correctly, all the selected columns will turn blue.
 
 ![](img/import_data_tableau8.png)
 
-11.
+11. Since the variables consist of to components, country names and unit, we will split variables into two separate columns by clicking the small arrow in the column name -> Split
+
+![](img/import_data_tableau9.png)
+
+12. The Variables column will be split into 2 columns, *Variables - split 1* and *Variables - split 1*. 
+
+![](img/import_data_tableau10.png)
+
+Rename it into *Country* and *Unit* by double clicking the column names and type the desired column name.
+
+13. Hide the original Variables column since we do not need it anymore
+
+![](img/import_data_tableau11.png)
+
+14. Do quality assurance (QA) to check any data discrepancies, especially for the split columns by dragging unit to the row pane in workspace canvas
+
+![](img/import_data_tableau12.png)
+
+15. Unit supposed to be either *Million* or *Thousand*, however it can be seen from the table below that there are other components that is not suppose to be in unit.
+
+![](img/import_data_tableau13.png)
+
+16. We can observe further by dragging *Country* into row shelves and *Unit* into filter -> untick *Million* and *Thousand* to see the which countries are these units belong to 
+
+![](img/import_data_tableau14.png)
+![](img/import_data_tableau15.png)
+
+17. Create another column or variable called "Country_Cleaned" to store the modified country name by using calculated field
+
+18. Create another calculated field called *Unit_Cleaned*, the formula is as follow
+
+19. Since merchandise trade values are in either Million or Thousand dollars, we will modify the values so that it will match the unit, create another calculated field to store modified trade values
+
+20. 
