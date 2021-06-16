@@ -50,4 +50,43 @@ To explore different perspective and design more truthful and enlightening data 
 
 ## 4.1 Data Preparation
 
-Copy the table from the raw dataset and paste it into the first row of the new created worksheet by using excel workbook. Clean import and export data are stored in the same file, but two different worksheets.Remove the data that is outside the study period. The study period for this study is between January 2011 to December 2020 for both import and export data. 
+1. Copy the table from the raw dataset and paste it into the first row of the new created worksheet by using excel workbook.
+
+2. Remove the data that is outside the study period. The study period for this study is between January 2011 to December 2020 for both import and export data. Clean import and export data are stored in the same file, but two different worksheets.
+
+3. Import clean dataset into tableau. There are few ways to import the dataset, two of them are:
+* Click *Microsoft Excel* and select your file or
+
+![](img/import_data_tableau.png) 
+
+* Drag the desired data file to tableau data source
+
+![](img/import_data_tableau2.png) 
+
+4.Drag new union to workspace 
+
+![](img/import_data_tableau3.png) 
+
+5. A union window will pop out, drag both import and export clean data to union window -> *ok*
+
+![](img/import_data_tableau4.png) 
+
+6. To change the monthly data to columnar format, select the import and export data from 2011 Jan to 2020 Dec by clicking 2011 Jan data -> Press *Shift* and click 2020 Dec data.
+If you did it correctly, all the selected columns will turn blue.
+
+![](img/import_data_tableau5.png)
+
+7. Click the small arrow in 2020 Dec column -> *Pivot*
+
+![](img/import_data_tableau6.png)
+8. The result of the pivot is as shown below
+
+![](img/import_data_tableau7.png)
+
+9. Double click on the column name to rename it
+
+10. Since the date data type is marked as string, change the data type to Date by clicking *abc* in the column's top left -> *Date*
+
+![](img/import_data_tableau8.png)
+
+11.

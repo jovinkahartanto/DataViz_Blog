@@ -117,7 +117,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["dataviz-makeover-2_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-2_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-2_files/distill-2.2.21/template.v2.js","dataviz-makeover-2_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-2_files/popper-2.6.0/popper.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-2_files/webcomponents-2.0.0/webcomponents.js","img/import_data_tableau.png"]}
+  {"type":"character","attributes":{},"value":["dataviz-makeover-2_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-2_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-2_files/distill-2.2.21/template.v2.js","dataviz-makeover-2_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-2_files/popper-2.6.0/popper.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-2_files/webcomponents-2.0.0/webcomponents.js","img/import_data_tableau.png","img/import_data_tableau2.png","img/import_data_tableau3.PNG","img/import_data_tableau4.PNG","img/import_data_tableau5.PNG","img/import_data_tableau6.PNG","img/import_data_tableau7.PNG","img/import_data_tableau8.PNG"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2121,7 +2121,42 @@ document.addEventListener('DOMContentLoaded', function() {
 <h1 id="aesthetics-1">Aesthetics:</h1>
 <h1 id="step-by-step-guide">4. Step-by-Step Guide</h1>
 <h2 id="data-preparation">4.1 Data Preparation</h2>
-<p>Copy the table from the raw dataset and paste it into the first row of the new created worksheet by using excel workbook. Clean import and export data are stored in the same file, but two different worksheets.Remove the data that is outside the study period. The study period for this study is between January 2011 to December 2020 for both import and export data.</p>
+<ol type="1">
+<li><p>Copy the table from the raw dataset and paste it into the first row of the new created worksheet by using excel workbook.</p></li>
+<li><p>Remove the data that is outside the study period. The study period for this study is between January 2011 to December 2020 for both import and export data. Clean import and export data are stored in the same file, but two different worksheets.</p></li>
+<li><p>Import clean dataset into tableau. There are few ways to import the dataset, two of them are:</p></li>
+</ol>
+<ul>
+<li>Click <em>Microsoft Excel</em> and select your file or</li>
+</ul>
+<p><img src="img/import_data_tableau.png" /></p>
+<ul>
+<li>Drag the desired data file to tableau data source</li>
+</ul>
+<p><img src="img/import_data_tableau2.png" /></p>
+<p>4.Drag new union to workspace</p>
+<p><img src="img/import_data_tableau3.PNG" /></p>
+<ol start="5" type="1">
+<li>A union window will pop out, drag both import and export clean data to union window -&gt; <em>ok</em></li>
+</ol>
+<p><img src="img/import_data_tableau4.PNG" /></p>
+<ol start="6" type="1">
+<li>To change the monthly data to columnar format, select the import and export data from 2011 Jan to 2020 Dec by clicking 2011 Jan data -&gt; Press <em>Shift</em> and click 2020 Dec data. If you did it correctly, all the selected columns will turn blue.</li>
+</ol>
+<p><img src="img/import_data_tableau5.PNG" /></p>
+<ol start="7" type="1">
+<li>Click the small arrow in 2020 Dec column -&gt; <em>Pivot</em></li>
+</ol>
+<p><img src="img/import_data_tableau6.PNG" /> 8. The result of the pivot is as shown below</p>
+<p><img src="img/import_data_tableau7.PNG" /></p>
+<ol start="9" type="1">
+<li><p>Double click on the column name to rename it</p></li>
+<li><p>Since the date data type is marked as string, change the data type to Date by clicking <em>abc</em> in the column’s top left -&gt; <em>Date</em></p></li>
+</ol>
+<p><img src="img/import_data_tableau8.PNG" /></p>
+<ol start="11" type="1">
+<li></li>
+</ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
