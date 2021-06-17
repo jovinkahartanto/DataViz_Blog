@@ -117,7 +117,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["dataviz-makeover-2_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-2_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-2_files/distill-2.2.21/template.v2.js","dataviz-makeover-2_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-2_files/popper-2.6.0/popper.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-2_files/webcomponents-2.0.0/webcomponents.js","img/import_data_tableau.png","img/import_data_tableau2.png","img/import_data_tableau3.PNG","img/import_data_tableau4.PNG","img/import_data_tableau5.PNG","img/import_data_tableau6.PNG","img/import_data_tableau7.PNG","img/import_data_tableau8.PNG"]}
+  {"type":"character","attributes":{},"value":["dataviz-makeover-2_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-2_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-2_files/distill-2.2.21/template.v2.js","dataviz-makeover-2_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-2_files/popper-2.6.0/popper.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-2_files/webcomponents-2.0.0/webcomponents.js","img/import_data_tableau.png","img/import_data_tableau10.PNG","img/import_data_tableau11.PNG","img/import_data_tableau12.PNG","img/import_data_tableau13.PNG","img/import_data_tableau14.PNG","img/import_data_tableau15.PNG","img/import_data_tableau16.PNG","img/import_data_tableau17.PNG","img/import_data_tableau18.PNG","img/import_data_tableau19.PNG","img/import_data_tableau2.png","img/import_data_tableau20.PNG","img/import_data_tableau21.PNG","img/import_data_tableau22.PNG","img/import_data_tableau3.PNG","img/import_data_tableau4.PNG","img/import_data_tableau5.PNG","img/import_data_tableau6.PNG","img/import_data_tableau7.PNG","img/import_data_tableau8.PNG","img/import_data_tableau9.PNG"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2151,12 +2151,53 @@ document.addEventListener('DOMContentLoaded', function() {
 <p><img src="img/import_data_tableau7.PNG" /></p>
 <ol start="9" type="1">
 <li><p>Double click on the column name to rename it</p></li>
-<li><p>Since the date data type is marked as string, change the data type to Date by clicking <em>abc</em> in the column’s top left -&gt; <em>Date</em></p></li>
+<li><p>Since the date data type is marked as string, change the data type to Date by clicking <em>abc</em> in the column’s top left -&gt; <em>Date</em>. Change <em>Pivot Field Values</em> data type to <em>number</em> instead of <em>string</em></p></li>
 </ol>
 <p><img src="img/import_data_tableau8.PNG" /></p>
 <ol start="11" type="1">
-<li></li>
+<li>Since the variables consist of to components, trading partners and unit, we will split variables into two separate columns by clicking the small arrow in the column name -&gt; Split</li>
 </ol>
+<p><img src="img/import_data_tableau9.PNG" /></p>
+<ol start="12" type="1">
+<li>The Variables column will be split into 2 columns, <em>Variables - split 1</em> and <em>Variables - split 1</em>.</li>
+</ol>
+<p><img src="img/import_data_tableau10.PNG" /></p>
+<p>Rename it into <em>Trading Partners</em> and <em>Unit</em> by double clicking the column names and type the desired column name.</p>
+<ol start="13" type="1">
+<li>Hide the original Variables column since we do not need it anymore</li>
+</ol>
+<p><img src="img/import_data_tableau11.PNG" /></p>
+<ol start="14" type="1">
+<li>Do quality assurance (QA) to check any data discrepancies, especially for the split columns by dragging unit to the row pane in workspace canvas</li>
+</ol>
+<p><img src="img/import_data_tableau12.PNG" /></p>
+<ol start="15" type="1">
+<li>Unit supposed to be either <em>Million</em> or <em>Thousand</em>, however it can be seen from the table below that there are other components that is not suppose to be in unit.</li>
+</ol>
+<p><img src="img/import_data_tableau13.PNG" /></p>
+<ol start="16" type="1">
+<li>We can observe further by dragging <em>Trading Partners</em> into row shelves and <em>Unit</em> into filter -&gt; untick <em>Million</em> and <em>Thousand</em> to see the which countries are these units belong to</li>
+</ol>
+<p><img src="img/import_data_tableau14.PNG" /> <img src="img/import_data_tableau15.PNG" /></p>
+<p><img src="img/import_data_tableau16.PNG" /></p>
+<ol start="17" type="1">
+<li>Create another column or variable called “Trading_Partners_Cleaned” to store the modified partners’ name by using calculated field</li>
+</ol>
+<p><img src="img/import_data_tableau17.PNG" /></p>
+<p><img src="img/import_data_tableau18.PNG" /></p>
+<ol start="18" type="1">
+<li>Create another calculated field called <em>Unit_Cleaned</em>, the formula is as follow</li>
+</ol>
+<p><img src="img/import_data_tableau19.PNG" /></p>
+<ol start="19" type="1">
+<li>Separate the merchandise trade values into Export and Import variable by using calculated field and since merchandise trade values are in either Million or Thousand dollars, the value will be multiplied by 1,000 or 1,000,000 based on the unit. The formula for export and import value are as follow:</li>
+</ol>
+<p><img src="img/import_data_tableau20.PNG" /> <img src="img/import_data_tableau21.PNG" /></p>
+<ol start="20" type="1">
+<li>It was observed that the trading partners are not only countries, it also consist of continents and total export and import. Since the focus in this study is to compare merchandise trade data between countries and union, we will create a calculated field that is only consist of countries and union.</li>
+</ol>
+<p><img src="img/import_data_tableau22.PNG" /></p>
+<p>Now the data preparation is done, merchandise trade data is ready to be used for the analysis.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
