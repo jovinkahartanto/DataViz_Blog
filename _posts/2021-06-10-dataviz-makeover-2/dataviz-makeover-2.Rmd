@@ -134,5 +134,115 @@ Rename it into *Trading Partners* and *Unit* by double clicking the column names
 20. It was observed that the trading partners are not only countries, it also consist of continents and total export and import. Since the focus in this study is to compare merchandise trade data between countries and union, we will create a calculated field that is only consist of countries and union.
 
 ![](img/import_data_tableau22.png)
+21. Create another calculated field as *Total Export & Import*
+
+![](img/import_data_tableau23.png)
+
 
 Now the data preparation is done, merchandise trade data is ready to be used for the analysis.
+
+## Top 10 Trading Partners
+
+1. In a clean worksheet:
+
+* Drag *Export* to columns shelves,*Import* to rows shelves, *Country* to detail in marks shelves to create the scatter plot
+* Drag *Country* to Text, to show Country Name in the plot
+* Drag *Total Export & Import* to tooltip, to give more information for each plot
+
+![](img/top1.png)
+
+2.Drag *Country* to filters shelves
+![](img/top2.png)
+
+3. Change the filter[Country] setting 
+* General-> Untick null
+
+![](img/top3.png)
+
+* Top -> By Field -> Change *Country* to *Total Export & Import* -> Apply -> Ok
+
+![](img/top4.png)
+
+4. Drag *Date* to filters shelves -> Double click on *# Years* 
+
+![](img/top5.png)
+
+Click All -> Apply -> Ok
+
+![](img/top6.png)
+
+5. Show both Country and Year(Date) filter by clicking the small white arrow -> Show Filter 
+
+![](img/top7.png)
+
+6. The selection default of this Filter[Country] is *Multiple Values (list)*.
+
+![](img/top8.png)
+
+ But, it will look better if we change it to *Multiple Values (dropdown)* . Click small black arrow in the selection beside the text *Country* -> Multiple Values (dropdown)
+ 
+![](img/top9.png)
+
+7. Repeat steps 5 and 6 for Filter[Year of Date], but instead of choosing Multiple Values (dropdown), choose Single Value (dropdown)
+
+8. Remove *(All)* from year selection. Click small black arrow beside the text *Year(Date)* -> Customize -> Show "All" Value
+
+![](img/top10.png)
+
+9. To change the chart title, double click on the title and change the title. However, in this case we want to insert YEAR(Date) selection variable to the title, the steps to add the selection variable are as follow:
+
+1. Remove *<Sheet Name>*, and type the text.
+2. Click *Insert* -> YEAR(Date)
+
+![](img/top11.png)
+10. Change the plot from *Automatic* -> *Circle*
+
+![](img/top12.png)
+11. Adjust the size, by selecting the icon below 
+
+![](img/top13.png)
+
+12. For visualization purposes, we will create a new boolean calculated field to separate the plot into two groups with two different colour. The first group is if sum of Import data higher than sum of Export data for the selected year. The second group is their sum of Export data higher than sum of Import data.
+
+The calculated field formula is as follow:
+
+![](img/top14.png)
+13. Drag *import>export* variable to colour, and now we can see two different groups. Orange plots are those countries with sum of import higher than export for the selected year, year 2019 was selected for the example below.
+
+![](img/top15.png)
+14. Adjust the color by clicking colour in marks shelves.
+
+![](img/top16.png)
+
+## Import Export Trend
+
+This line chart is created to show the monthly import export trend for the selected year and selected country. The chart will be inserted in the *Top 10 Trading Partners* plot's tooltip.
+
+1. Create a new worksheet by clicking the icon below
+
+![](img/tt1.png)
+2. Drag *Country* and *Date* variable to columns shelves, *Import* and *Export* to rows shelves
+
+![](img/tt2.png)
+3. Click the small arrow in *YEAR(Date)* variable in columns pane -> Select month
+
+![](img/tt3.png)
+
+![](img/tt4.png)
+
+4. We will use dual lines graph for this chart.
+
+![](img/tt5.png)
+
+Once you click dual lines graph, country variable will move to rows shelves, drag country back to columns shelves. 
+
+5. To make the colour of the axis title match with the color of the chart, right click on the axis -> Format
+
+![](img/tt6.png)
+
+6. Click the small arrow beside *Font* -> Choose the colour
+
+![](img/tt7.png)
+
+7. Repeat step 5 and 6 for export axis
+

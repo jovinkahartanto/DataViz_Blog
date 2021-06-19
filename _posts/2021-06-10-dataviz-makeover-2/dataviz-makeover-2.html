@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["dataviz-makeover-2_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-2_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-2_files/distill-2.2.21/template.v2.js","dataviz-makeover-2_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-2_files/popper-2.6.0/popper.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-2_files/webcomponents-2.0.0/webcomponents.js","img/import_data_tableau.png","img/import_data_tableau10.PNG","img/import_data_tableau11.PNG","img/import_data_tableau12.PNG","img/import_data_tableau13.PNG","img/import_data_tableau14.PNG","img/import_data_tableau15.PNG","img/import_data_tableau16.PNG","img/import_data_tableau17.PNG","img/import_data_tableau18.PNG","img/import_data_tableau19.PNG","img/import_data_tableau2.png","img/import_data_tableau20.PNG","img/import_data_tableau21.PNG","img/import_data_tableau22.PNG","img/import_data_tableau3.PNG","img/import_data_tableau4.PNG","img/import_data_tableau5.PNG","img/import_data_tableau6.PNG","img/import_data_tableau7.PNG","img/import_data_tableau8.PNG","img/import_data_tableau9.PNG"]}
+  {"type":"character","attributes":{},"value":["dataviz-makeover-2_files/anchor-4.2.2/anchor.min.js","dataviz-makeover-2_files/bowser-1.9.3/bowser.min.js","dataviz-makeover-2_files/distill-2.2.21/template.v2.js","dataviz-makeover-2_files/jquery-1.11.3/jquery.min.js","dataviz-makeover-2_files/popper-2.6.0/popper.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-bundle.umd.min.js","dataviz-makeover-2_files/tippy-6.2.7/tippy-light-border.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.css","dataviz-makeover-2_files/tippy-6.2.7/tippy.umd.min.js","dataviz-makeover-2_files/webcomponents-2.0.0/webcomponents.js","img/import_data_tableau.png","img/import_data_tableau10.PNG","img/import_data_tableau11.PNG","img/import_data_tableau12.PNG","img/import_data_tableau13.PNG","img/import_data_tableau14.PNG","img/import_data_tableau15.PNG","img/import_data_tableau16.PNG","img/import_data_tableau17.PNG","img/import_data_tableau18.PNG","img/import_data_tableau19.PNG","img/import_data_tableau2.png","img/import_data_tableau20.PNG","img/import_data_tableau21.PNG","img/import_data_tableau22.PNG","img/import_data_tableau23.PNG","img/import_data_tableau3.PNG","img/import_data_tableau4.PNG","img/import_data_tableau5.PNG","img/import_data_tableau6.PNG","img/import_data_tableau7.PNG","img/import_data_tableau8.PNG","img/import_data_tableau9.PNG","img/top1.PNG","img/top10.PNG","img/top11.PNG","img/top12.PNG","img/top13.PNG","img/top14.PNG","img/top15.PNG","img/top16.PNG","img/top2.PNG","img/top3.PNG","img/top4.PNG","img/top5.PNG","img/top6.PNG","img/top7.PNG","img/top8.PNG","img/top9.PNG","img/tt1.PNG","img/tt2.PNG","img/tt3.PNG","img/tt4.PNG","img/tt5.PNG","img/tt6.PNG","img/tt7.PNG"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1576,8 +1576,92 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <ol start="20" type="1">
 <li>It was observed that the trading partners are not only countries, it also consist of continents and total export and import. Since the focus in this study is to compare merchandise trade data between countries and union, we will create a calculated field that is only consist of countries and union.</li>
 </ol>
-<p><img src="img/import_data_tableau22.PNG" /></p>
+<p><img src="img/import_data_tableau22.PNG" /> 21. Create another calculated field as <em>Total Export &amp; Import</em></p>
+<p><img src="img/import_data_tableau23.PNG" /></p>
 <p>Now the data preparation is done, merchandise trade data is ready to be used for the analysis.</p>
+<h2 id="top-10-trading-partners">Top 10 Trading Partners</h2>
+<ol type="1">
+<li>In a clean worksheet:</li>
+</ol>
+<ul>
+<li>Drag <em>Export</em> to columns shelves,<em>Import</em> to rows shelves, <em>Country</em> to detail in marks shelves to create the scatter plot</li>
+<li>Drag <em>Country</em> to Text, to show Country Name in the plot</li>
+<li>Drag <em>Total Export &amp; Import</em> to tooltip, to give more information for each plot</li>
+</ul>
+<p><img src="img/top1.PNG" /></p>
+<p>2.Drag <em>Country</em> to filters shelves <img src="img/top2.PNG" /></p>
+<ol start="3" type="1">
+<li>Change the filter[Country] setting</li>
+</ol>
+<ul>
+<li>General-&gt; Untick null</li>
+</ul>
+<p><img src="img/top3.PNG" /></p>
+<ul>
+<li>Top -&gt; By Field -&gt; Change <em>Country</em> to <em>Total Export &amp; Import</em> -&gt; Apply -&gt; Ok</li>
+</ul>
+<p><img src="img/top4.PNG" /></p>
+<ol start="4" type="1">
+<li>Drag <em>Date</em> to filters shelves -&gt; Double click on <em># Years</em></li>
+</ol>
+<p><img src="img/top5.PNG" /></p>
+<p>Click All -&gt; Apply -&gt; Ok</p>
+<p><img src="img/top6.PNG" /></p>
+<ol start="5" type="1">
+<li>Show both Country and Year(Date) filter by clicking the small white arrow -&gt; Show Filter</li>
+</ol>
+<p><img src="img/top7.PNG" /></p>
+<ol start="6" type="1">
+<li>The selection default of this Filter[Country] is <em>Multiple Values (list)</em>.</li>
+</ol>
+<p><img src="img/top8.PNG" /></p>
+<p>But, it will look better if we change it to <em>Multiple Values (dropdown)</em> . Click small black arrow in the selection beside the text <em>Country</em> -&gt; Multiple Values (dropdown)</p>
+<p><img src="img/top9.PNG" /></p>
+<ol start="7" type="1">
+<li><p>Repeat steps 5 and 6 for Filter[Year of Date], but instead of choosing Multiple Values (dropdown), choose Single Value (dropdown)</p></li>
+<li><p>Remove <em>(All)</em> from year selection. Click small black arrow beside the text <em>Year(Date)</em> -&gt; Customize -&gt; Show “All” Value</p></li>
+</ol>
+<p><img src="img/top10.PNG" /></p>
+<ol start="9" type="1">
+<li><p>To change the chart title, double click on the title and change the title. However, in this case we want to insert YEAR(Date) selection variable to the title, the steps to add the selection variable are as follow:</p></li>
+<li><p>Remove <em><Sheet Name></em>, and type the text.</p></li>
+<li><p>Click <em>Insert</em> -&gt; YEAR(Date)</p></li>
+</ol>
+<p><img src="img/top11.PNG" /> 10. Change the plot from <em>Automatic</em> -&gt; <em>Circle</em></p>
+<p><img src="img/top12.PNG" /> 11. Adjust the size, by selecting the icon below</p>
+<p><img src="img/top13.PNG" /></p>
+<ol start="12" type="1">
+<li>For visualization purposes, we will create a new boolean calculated field to separate the plot into two groups with two different colour. The first group is if sum of Import data higher than sum of Export data for the selected year. The second group is their sum of Export data higher than sum of Import data.</li>
+</ol>
+<p>The calculated field formula is as follow:</p>
+<p><img src="img/top14.PNG" /> 13. Drag <em>import&gt;export</em> variable to colour, and now we can see two different groups. Orange plots are those countries with sum of import higher than export for the selected year, year 2019 was selected for the example below.</p>
+<p><img src="img/top15.PNG" /> 14. Adjust the color by clicking colour in marks shelves.</p>
+<p><img src="img/top16.PNG" /></p>
+<h2 id="import-export-trend">Import Export Trend</h2>
+<p>This line chart is created to show the monthly import export trend for the selected year and selected country. The chart will be inserted in the <em>Top 10 Trading Partners</em> plot’s tooltip.</p>
+<ol type="1">
+<li>Create a new worksheet by clicking the icon below</li>
+</ol>
+<p><img src="img/tt1.PNG" /> 2. Drag <em>Country</em> and <em>Date</em> variable to columns shelves, <em>Import</em> and <em>Export</em> to rows shelves</p>
+<p><img src="img/tt2.PNG" /> 3. Click the small arrow in <em>YEAR(Date)</em> variable in columns pane -&gt; Select month</p>
+<p><img src="img/tt3.PNG" /></p>
+<p><img src="img/tt4.PNG" /></p>
+<ol start="4" type="1">
+<li>We will use dual lines graph for this chart.</li>
+</ol>
+<p><img src="img/tt5.PNG" /></p>
+<p>Once you click dual lines graph, country variable will move to rows shelves, drag country back to columns shelves.</p>
+<ol start="5" type="1">
+<li>To make the colour of the axis title match with the color of the chart, right click on the axis -&gt; Format</li>
+</ol>
+<p><img src="img/tt6.PNG" /></p>
+<ol start="6" type="1">
+<li>Click the small arrow beside <em>Font</em> -&gt; Choose the colour</li>
+</ol>
+<p><img src="img/tt7.PNG" /></p>
+<ol start="7" type="1">
+<li>Repeat step 5 and 6 for export axis</li>
+</ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
