@@ -9,7 +9,7 @@ date: 06-10-2021
 output:
   distill::distill_article:
     self_contained: false
-    toc:true
+    toc: true
 ---
 
 
@@ -215,6 +215,16 @@ The calculated field formula is as follow:
 
 ![](img/top16.png)
 
+15.By default, all filters that are set in Tableau are computed independently. That is, each filter accesses all rows in the data source without regard to other filters.However in this case we need to filter the data by selected year and and pass the filtered data to select the top 10 total merchandise trade data. The steps are as follow:
+
+1. Click the small white arrow in YEAR(Date) filter
+
+![](img/top17.png)
+
+2. Click *Add to Context*
+
+![](img/top18.png)
+
 ## Import Export Trend
 
 This line chart is created to show the monthly import export trend for the selected year and selected country. The chart will be inserted in the *Top 10 Trading Partners* plot's tooltip.
@@ -247,3 +257,29 @@ Once you click dual lines graph, country variable will move to rows shelves, dra
 
 7. Repeat step 5 and 6 for export axis
 
+8. Double click on the sheet name to rename it
+
+![](img/tt8.png)
+9. Edit the alignment and format of the x-axis label by right clicking the x-axis -> Format 
+
+Change the *Alignment* to up -> Change the label format *MMM-YY*
+
+## Adding line graph as a tooltip for scatter plot
+
+1. Click the tooltip icon on scatter plot
+
+2.To insert the other chart to the tooltip, click *Insert* in Edit Tooltip window -> Sheets -> Select the chart that wanted to be added to the tooltip
+
+![](img/att1.png)
+3. Adjust maxwidth and mexheight according to the size of the inserted chart. In this case we will use 700 for maxwidth and 300 for maxheight.
+
+![](img/att2.png)
+
+4. Drag *Date* into detail to make the chart in the tooltip become monthly trend for the selected year instead of yearly trend.
+
+![](img/att3.png)
+
+5. The tooltip will look like the figure below when we hover the mouse over the plot. 
+
+![](img/att4.png)
+6. Edit the tooltip to make it tell a better story
