@@ -22,27 +22,40 @@ Nowadays, data visualisation such as graphs and maps can be found anywhere. Data
 
 This post will makeover the chart below, so that it can be more fruitful for the audience. The data visualisation will be created by using data provided by Department of Statistics, Singapore (DOS). The data are available under the sub-section of [Merchandise Trade by Region/Market](https://www.singstat.gov.sg/find-data/search-by-theme/trade-and-investment/merchandise-trade/latest-data).
 
+![](img/original.png)
+Source: [Department of Statistics, Singapore](https://www.singstat.gov.sg/modules/infographics/singapore-international-trade)
+
 # 2. Critique of Visualisation 
 To explore different perspective and design more truthful and enlightening data visualisation, we will first observe the original visualisation. The critiques will be divided into two section, clarity and aesthetics.  
 
 
-
 ## 2.1 Clarity
-1. The color opacity of the chart can be reduced, since some of the plots overlap each other. 
-2. The label is not very informative, for example, it can state number of import, export, and total.
-3. There is no gridlines in the chart to help the audience compare the import and export values 
-4. There is not enough annotation or tooltip that can show the audience the import and export value
-5. There is no explanation of what is the label in each bubble represent, it can caused misinterpretation
+1. The label is not very informative, for example, it can state number of import, export, and total
+2. There is no gridlines in the chart to help the audience compare the import and export values 
+3. There is not enough annotation or tooltip that can show the audience the import and export value
+4. There is no explanation of what is the label in each bubble represent, it can caused misinterpretation
+5. There is no clear explanation on how to determine the top net exporter and top net importer
 
 ## 2.2 Aesthetics
-1. The color opacity of the chart can be reduced, since some of the plots overlap each other.
-2. A similar color is used to represent two different trading partners, Thailand and EU.
-3. Using an acronym for European Union (EU) make the naming of the trading partners inconsistent, since the rest of the trading partners was written in long form. 
+1. The opacity of the chart can be reduced, since some of the plots overlap each other and  it is hard to see if the centre point (white circle) of the bubbles falls in blue or green region 
+2. A similar color is used to represent two different trading partners, Thailand and EU
+3. Using an acronym for European Union (EU) make the naming of the trading partners inconsistent, since the rest of the trading partners was written in long form 
 
 # 3. Alternative Design
+
+The alternative graphical design proposed can be seen below:
+
+
+
 # Clarity:
+1. 
+2. Added more information for each plot, which are total import, total export, total import and export, and lastly monthly trend for the selected year
+3. Added gridlines to make the data point easier to read
 
 # Aesthetics:
+1. The opacity and the size of the scatter plot has been reduced, therefore all the plots can be seen, even though some of they are overlapped
+2. Give a different colour for trading partners with value of exports exceeds imports and trading partners with sum of imports exceeds exports, therefore it will be easier to see which countries falls into which group rather than relying on the centre point of the plot like in the original visualisation
+3. All the naming of trading partners are consistent, there is no acronym in the label of the plots
 
 
 # 4. Step-by-Step Guide
@@ -225,6 +238,29 @@ The calculated field formula is as follow:
 
 ![](img/top18.png)
 
+16. Adjust the opacity by clicking colour icon -> change the opacity percentage
+
+![](img/top19.png)
+17. Drag *Total Export & Import* to size, the bigger the size of the scatter plot, the higher the sum of total import & export for that country for the selected year. Adjust the circle size by clicking *Size* icon
+
+![](img/top20.png)
+18. Adjust the label font and alignment by clicking *Label* icon.
+
+![](img/top21.png)
+19. Create 45 degree line to show net importers and net exporters. The steps to create the 45 degree line,  are as follow:
+
+1. Drag **Import** to columns shelf -> Click the small arrow -> **Dual Axis**
+2. Click **Sum(Import)** in the columns shelf and edit the components under marks shelf
+3. Remove **Country** (Text - SUM(Import)) and *AGG(Total Export and Import)* (Size and Tooltip - SUM(Import)) from Marks shelf 
+4. Change the size to the smallest
+5. Click **Color** in SUM(Import) -> change the opacity to 0%
+6. Right click on the graph -> **Trend Lines** -> **Show Trend Lines** -> **SUM(Import)**
+7. Change the axis range to **Fixed** -> change **Fixed start** and **Fixed end**
+8. Make sure all axis have same range
+9. Change the format of the 45 degree line by double clicking the line -> **Format**
+10. Change the format of the trend line to dotted line
+
+
 ## Import Export Trend
 
 This line chart is created to show the monthly import export trend for the selected year and selected country. The chart will be inserted in the *Top 10 Trading Partners* plot's tooltip.
@@ -271,15 +307,59 @@ Change the *Alignment* to up -> Change the label format *MMM-YY*
 2.To insert the other chart to the tooltip, click *Insert* in Edit Tooltip window -> Sheets -> Select the chart that wanted to be added to the tooltip
 
 ![](img/att1.png)
-3. Adjust maxwidth and mexheight according to the size of the inserted chart. In this case we will use 700 for maxwidth and 300 for maxheight.
+3. Adjust maxwidth and mexheight according to the size of the inserted chart. In this case we will use 700 for maxwidth and 300 for maxheight
 
 ![](img/att2.png)
 
-4. Drag *Date* into detail to make the chart in the tooltip become monthly trend for the selected year instead of yearly trend.
+4. Drag *Date* into detail to make the chart in the tooltip become monthly trend for the selected year instead of yearly trend
 
 ![](img/att3.png)
 
 5. The tooltip will look like the figure below when we hover the mouse over the plot. 
 
 ![](img/att4.png)
-6. Edit the tooltip to make it tell a better story
+
+6. Create a new calculation field for tooltip
+
+![](img/att5.png)
+
+7. Edit the tooltip by clicking tooltip in under *All* Marks shelves, edit the tooltip as per below
+
+![](img/att6.png)
+
+
+## Animations
+
+Turn on the animation by selecting *Format* -> *Animation*
+
+![](img/ani1.png)
+The settings for animation is as follows
+
+![](img/ani2.png)
+
+## Dashboard
+
+1. Create a new dashboard
+
+![](img/db1.png)
+
+2. Drag the *Top 10* chart to the dashboard
+
+![](img/db2.png)
+
+3. Change the dashboard size to *Automatic*
+
+![](img/db3.png)
+
+4. Any objects can be added to the dashboard, in this case we want to edit text to the blank space by dragging *Text* to the blank space below the year selection
+
+![](img/db4.png)
+
+5, Once we drag the *Text*, *Edit Text* panel will instantly pop up, edit the text as per below
+
+![](img/db5.png)
+
+6. Add another text on top of the year selection, to add *Select Year and Countries* text
+7. The final dashoard is ready
+
+# 5.0 Major Obeservations
