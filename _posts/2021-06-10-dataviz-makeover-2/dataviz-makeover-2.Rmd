@@ -214,6 +214,7 @@ Click All -> Apply -> Ok
 10. Change the plot from **Automatic** -> **Circle**
 
 ![Figure 37](img/top12.png)
+
 11. Adjust the size, by selecting the icon below 
 
 ![Figure 38](img/top13.png)
